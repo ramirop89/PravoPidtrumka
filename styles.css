@@ -2223,3 +2223,58 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   html body .service-points{display:grid;gap:8px}
   html body .service-points li{margin:0!important}
 }
+
+/* ===== v25: мобільна типографіка з найвищим пріоритетом (:not(#_) перебиває всі старі правила) ===== */
+@media (max-width:700px){
+  :root{--t-h1:38px;--t-h2:30px;--t-h3:20px;--t-kicker:13px;--t-intro:16px;--t-lead:17px;--t-crumb:13px}
+
+  h1:not(#_),h2:not(#_),h3:not(#_),summary:not(#_){text-wrap:balance}
+  p:not(#_),li:not(#_),small:not(#_){text-wrap:pretty}
+
+  /* H1 */
+  .hero h1:not(#_),.page-head h1:not(#_){font-size:38px!important;line-height:1.08!important;letter-spacing:-1px!important}
+  /* H2 — усі підзаголовки секцій */
+  main h2:not(#_),section h2:not(#_),.cta h2:not(#_){font-size:30px!important;line-height:1.15!important;letter-spacing:-.6px!important;margin-bottom:14px!important}
+  .service-price-panel h2:not(#_){font-size:44px!important;line-height:1!important;margin-bottom:0!important}
+  /* H3 і жирні заголовки в картках */
+  main h3:not(#_),section h3:not(#_),.step b:not(#_),.faq-side-copy b:not(#_),.about-scope aside b:not(#_),.summary-includes b:not(#_),.sidebox h3:not(#_){
+    font-size:20px!important;line-height:1.28!important;letter-spacing:-.2px!important}
+  /* мітки */
+  .section-kicker:not(#_){font-size:13px!important;line-height:1.4!important;letter-spacing:2.2px!important;margin-bottom:10px!important}
+  .crumb:not(#_){font-size:13px!important;margin-bottom:14px!important}
+  /* підзаголовок під H1 */
+  .hero .lead:not(#_),.page-head p:not(#_){font-size:17px!important;line-height:1.55!important}
+  /* основний текст */
+  main p:not(#_),section p:not(#_),main li:not(#_),.step small:not(#_),.faq-side-copy span:not(#_),.cta-copy>p:not(#_),
+  .about-scope p:not(#_),.contacts-photo-copy p:not(#_),.sidebox p:not(#_),.booking-summary small:not(#_){
+    font-size:16px!important;line-height:1.6!important}
+  .page-head p:not(#_),.hero .lead:not(#_){font-size:17px!important;line-height:1.55!important}
+  .booking-summary .summary-price:not(#_){font-size:26px!important;line-height:1.2!important}
+  .booking-summary b:not(#_){font-size:17px!important;line-height:1.3!important}
+
+  /* кнопки: довгі — без ціни (ціна вже є поруч і в нижній панелі) */
+  .btn .btn-price{display:none}
+  .btn:not(#_){min-height:56px!important;padding:14px 18px!important;font-size:16px!important;line-height:1.3!important;border-radius:14px!important;
+    white-space:normal!important;text-align:center!important;justify-content:center!important;align-items:center!important}
+  .btn:not(#_) .bt{display:inline!important;font-size:inherit!important}
+
+  /* «Принципи роботи» — компактні картки */
+  .principle-card:not(#_){padding:20px!important}
+  .principle-heading:not(#_){gap:14px!important;align-items:center!important;margin-bottom:10px!important}
+  .principle-card .icon:not(#_),.principle-heading .icon:not(#_),.principle-heading>span:first-child:not(#_){width:44px!important;height:44px!important;min-width:44px!important;border-radius:12px!important}
+  .principle-card svg:not(#_){width:22px!important;height:22px!important}
+
+  /* «Що важливо знати» */
+  .about-scope:not(#_){padding:26px 20px!important}
+  .about-scope aside:not(#_){padding:20px!important;margin-top:18px!important}
+
+  /* картки контактів */
+  .contact-cards .card h3:not(#_){margin:0 0 4px!important}
+  .contacts-photo-panel h2:not(#_){margin-bottom:10px!important}
+
+  /* картки послуг на «Послугах» */
+  .service-feature-body h3:not(#_){font-size:22px!important}
+  .feature-topline:not(#_){align-items:center!important}
+}
+@media (max-width:700px){.principle-icon:not(#_){width:44px!important;height:44px!important;min-width:44px!important;border-radius:12px!important}.principle-icon svg:not(#_){width:22px!important;height:22px!important}}
+@media (max-width:700px){.btn:not(#_) .arr{display:inline!important;margin-left:0!important}.service-price-panel:not(#_){padding:26px 20px!important}.service-price-panel .btn:not(#_){width:100%!important}}
