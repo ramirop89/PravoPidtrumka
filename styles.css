@@ -248,7 +248,7 @@ body{background:#111;color:#f7f4ef}
   align-items:center;
   background:
     linear-gradient(90deg,rgba(13,13,13,.94) 0%,rgba(13,13,13,.82) 46%,rgba(13,13,13,.28) 100%),
-    url('assets/booking-office.jpg') center 54%/cover no-repeat;
+    url('assets/hq/booking-office-4k.webp') center 54%/cover no-repeat;
   border-bottom:1px solid rgba(255,255,255,.1);
 }
 .booking-head h1{font-size:clamp(40px,4.8vw,60px);color:#fff}
@@ -257,7 +257,7 @@ body{background:#111;color:#f7f4ef}
   padding:64px 0 88px;
   background:
     linear-gradient(115deg,rgba(20,19,18,.97),rgba(28,25,22,.93)),
-    url('assets/booking-office.jpg') center/cover no-repeat;
+    url('assets/hq/booking-office-4k.webp') center/cover no-repeat;
 }
 .booking-content .content-grid{
   grid-template-columns:minmax(0,1.5fr) minmax(280px,.72fr);
@@ -629,7 +629,7 @@ body{background:#111;color:#f7f4ef}
 .about-bottom-cta .btn{font-size:17px;padding:19px 27px;white-space:nowrap}
 
 /* FAQ page */
-.faq-head{background:linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.72)),url('assets/booking-office.jpg') center 54%/cover}
+.faq-head{background:linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.72)),url('assets/hq/booking-office-4k.webp') center 54%/cover}
 .faq-content{background:linear-gradient(180deg,#f4efe8,#eae3da);color:#211d19;padding:68px 0 85px}
 .faq-layout{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.5fr);gap:54px;align-items:start}
 .faq-intro{position:sticky;top:120px}
@@ -1669,10 +1669,10 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 
 /* More coherent, relevant photo direction across secondary pages */
 .services-head{background:linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.83) 48%,rgba(13,13,13,.38) 100%),url('assets/hero-legal-office.jpg') center 48%/cover}
-.service-feature.reservation-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.18)),url('assets/booking-office.jpg') center/cover}
+.service-feature.reservation-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.18)),url('assets/hq/booking-office-4k.webp') center/cover}
 .service-feature.disability-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.18)),url('assets/hero-consultation.jpg') center 46%/cover}
 .about-head{background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.54)),url('assets/hero-legal-office.jpg') center 52%/cover}
-.about-photo{background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.02)),url('assets/booking-office.jpg') center/cover}
+.about-photo{background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.02)),url('assets/hq/booking-office-4k.webp') center/cover}
 .faq-head{background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.58)),url('assets/hero-consultation.jpg') center 48%/cover}
 
 /* Contacts page: stronger type and CTA positioned in the open right area */
@@ -1741,7 +1741,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 }
 .service-feature.reservation-feature .service-feature-visual{
   background:linear-gradient(110deg,rgba(18,17,16,.78),rgba(18,17,16,.12)),
-    url('assets/services-reservation-new.jpg') center 54%/cover no-repeat;
+    url('assets/hq/services-reservation-new-4k.webp') center 54%/cover no-repeat;
 }
 .service-feature.disability-feature .service-feature-visual{
   background:linear-gradient(110deg,rgba(18,17,16,.8),rgba(18,17,16,.12)),
@@ -1777,13 +1777,13 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 .contacts-head{
   background:
     linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.84) 43%,rgba(13,13,13,.20) 100%),
-    url('assets/contacts-header-new.jpg') center 53%/cover no-repeat;
+    url('assets/hq/contacts-header-new-4k.webp') center 53%/cover no-repeat;
 }
 .contacts-head .wrap{position:relative;z-index:1}
 .contacts-photo-panel{
   background:
     linear-gradient(90deg,rgba(13,13,13,.92) 0%,rgba(13,13,13,.72) 42%,rgba(13,13,13,.12) 100%),
-    url('assets/contacts-cta-new.jpg') center 52%/cover no-repeat;
+    url('assets/hq/contacts-cta-new-4k.webp') center 52%/cover no-repeat;
 }
 @media(max-width:800px){
   .contacts-head{background-position:62% center}
@@ -1805,7 +1805,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 .hero{
   background:
     linear-gradient(90deg,rgba(12,12,12,.96) 0%,rgba(12,12,12,.82) 40%,rgba(12,12,12,.14) 100%),
-    url('assets/war-uniform.jpg') center 48%/cover no-repeat;
+    url('assets/hq/user-war-closeup-4k.webp') center 48%/cover no-repeat;
 }
 .priceband{
   background-image:
@@ -1822,22 +1822,22 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 .services-head{
   background:
     linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.82) 48%,rgba(13,13,13,.24) 100%),
-    url('assets/services-header-war.jpg') center 50%/cover no-repeat;
+    url('assets/hq/services-reservation-new-4k.webp') center 50%/cover no-repeat;
 }
 .service-feature.reservation-feature .service-feature-visual{
   background:
     linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.14)),
-    url('assets/service-reservation-armor.jpg') center 48%/cover no-repeat;
+    url('assets/hq/service-reservation-armor-4k.webp') center 48%/cover no-repeat;
 }
 .service-feature.disability-feature .service-feature-visual{
   background:
     linear-gradient(110deg,rgba(18,17,16,.84),rgba(18,17,16,.16)),
-    url('assets/disability-medical.jpg') center 48%/cover no-repeat;
+    url('assets/hq/disability-medical-4k.webp') center 48%/cover no-repeat;
 }
 .about-head{
   background:
     linear-gradient(90deg,rgba(15,15,15,.95),rgba(15,15,15,.58)),
-    url('assets/about-header-war.jpg') center 50%/cover no-repeat;
+    url('assets/hq/about-header-war-4k.webp') center 50%/cover no-repeat;
 }
 /* Keep the previously approved/circled About-page photo unchanged. */
 .faq-head{
@@ -1854,7 +1854,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 .faq-head{
   background:
     linear-gradient(90deg,rgba(13,13,13,.95) 0%,rgba(13,13,13,.78) 43%,rgba(13,13,13,.30) 100%),
-    url('assets/faq-header-new-war.webp') center 48%/cover no-repeat;
+    url('assets/hq/faq-header-new-war-4k.webp') center 48%/cover no-repeat;
 }
 .faq-head .crumb{font-size:18px;line-height:1.6;margin-bottom:18px}
 .faq-head .section-kicker{font-size:17px;letter-spacing:2px}
@@ -1947,24 +1947,24 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 .hero{
   background:
     linear-gradient(90deg,rgba(12,12,12,.96) 0%,rgba(12,12,12,.82) 40%,rgba(12,12,12,.14) 100%),
-    url('assets/user-war-closeup.jpg') center 48%/cover no-repeat;
+    url('assets/hq/user-war-closeup-4k.webp') center 48%/cover no-repeat;
 }
 .priceband{
   background-image:
     linear-gradient(90deg,#171717 0%,rgba(23,23,23,.93) 40%,rgba(23,23,23,.18) 100%),
-    url('assets/user-ukrainian-soldiers.jpg');
+    url('assets/hq/user-ukrainian-soldiers-4k.webp');
   background-size:cover;background-position:center 52%;
 }
 .cta{
   background-image:
     linear-gradient(90deg,rgba(18,18,18,.16) 0%,rgba(18,18,18,.62) 38%,rgba(18,18,18,.94) 68%,#151515 100%),
-    url('assets/user-soldier-back.jpg');
+    url('assets/hq/user-soldier-back-4k.webp');
   background-size:cover;background-position:center 52%;
 }
 .about-photo{
   background:
     linear-gradient(0deg,rgba(0,0,0,.16),rgba(0,0,0,.03)),
-    url('assets/generated-field-documents.jpg') center 48%/cover no-repeat;
+    url('assets/hq/booking-office-4k.webp') center 48%/cover no-repeat;
 }
 
 /* v19: єдині розміри заголовків і підзаголовків — як на головній */
@@ -2278,3 +2278,11 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 }
 @media (max-width:700px){.principle-icon:not(#_){width:44px!important;height:44px!important;min-width:44px!important;border-radius:12px!important}.principle-icon svg:not(#_){width:22px!important;height:22px!important}}
 @media (max-width:700px){.btn:not(#_) .arr{display:inline!important;margin-left:0!important}.service-price-panel:not(#_){padding:26px 20px!important}.service-price-panel .btn:not(#_){width:100%!important}}
+
+/* ===== v26/v27: фото 4K (Nano Banana 2.1 upscale) ===== */
+@media (max-width:700px){
+  .service-feature-visual:not(#_){min-height:0!important;height:190px!important;background-size:cover!important}
+  .reservation-feature .service-feature-visual:not(#_){background:linear-gradient(110deg,rgba(18,17,16,.8),rgba(18,17,16,.12)),url('assets/hq/service-reservation-armor-m.webp') center 48%/cover no-repeat!important}
+  .disability-feature .service-feature-visual:not(#_){background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.14)),url('assets/hq/disability-medical-m.webp') center 48%/cover no-repeat!important}
+  .booking-content:not(#_){background:radial-gradient(circle at 50% 0,rgba(190,27,39,.10),transparent 55%),#121110!important}
+}
