@@ -1,0 +1,2109 @@
+:root{--ink:#171717;--panel:#222;--paper:#f4f0e9;--muted:#b9b5af;--red:#bd2631;--red2:#981d27;--line:rgba(255,255,255,.12);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101010;color:#f8f6f2;font-family:"Golos Text",Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{border-bottom:1px solid var(--line);background:#151515;position:sticky;top:0;z-index:20}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:14px;line-height:1.15}.crest{width:40px;height:40px;border:1px solid #b9a879;border-radius:12px;display:grid;place-items:center;color:#d9cba7;font-size:22px}.links{display:flex;align-items:center;gap:24px;color:#d4d0c9;font-size:13px}.links a:hover,.links a.active{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:white;border:0;border-radius:12px;padding:13px 20px;font:700 14px "Golos Text";cursor:pointer;transition:.2s}.btn:hover{background:var(--red2);transform:translateY(-1px)}.btn.outline{background:transparent;border:1px solid #777}.hero{padding:72px 0 66px;background:radial-gradient(circle at 78% 35%,#3d3832 0,transparent 35%),linear-gradient(110deg,#171717,#24211f 70%,#171717);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:40px}.eyebrow{color:#d4b9a0;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}.hero h1{font-size:clamp(36px,5vw,62px);line-height:1.08;letter-spacing:-2px;margin:18px 0}.hero h1 em{font-style:normal;color:#e04a54}.lead{font-size:17px;color:#d1ccc4;max-width:600px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-art{min-height:360px;border-radius:24px;border:1px solid #514a42;background:linear-gradient(135deg,rgba(15,15,15,.15),rgba(15,15,15,.8)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=85') center/cover;position:relative;box-shadow:0 25px 70px #0008}.hero-art:after{content:"ПРАВО • ПРОЦЕДУРА • ПІДТРИМКА";position:absolute;bottom:22px;left:22px;font-size:11px;letter-spacing:2px;color:#eee;background:#151515bd;padding:10px 13px;border-radius:8px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#d1ccc4;font-size:12px}.trust span:before{content:"✓";color:#d5b77e;margin-right:8px;font-weight:800}.section{padding:68px 0}.section.paper{background:var(--paper);color:#1b1b1b}.section h2{font-size:34px;letter-spacing:-1px;margin:0 0 10px}.section-intro{color:#aaa;max-width:680px;margin:0 0 28px}.paper .section-intro{color:#68635d}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#242424;border:1px solid var(--line);border-radius:18px;padding:25px}.paper .card{background:#fff;border:1px solid #e8e1d8;box-shadow:0 8px 24px #30271b0c}.icon{width:48px;height:48px;border-radius:14px;background:#3a2527;color:#f2a5a8;display:grid;place-items:center;font-size:23px;margin-bottom:18px}.paper .icon{background:#f8e9e7;color:#a9222d}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:#bbb5ae;font-size:13px}.paper .card p{color:#69645e}.card a.more{display:inline-block;margin-top:17px;color:#e36b72;font-size:13px;font-weight:800}.paper .card a.more{color:#a9222d}.priceband{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#202020;border-radius:18px;padding:24px 30px;margin-top:22px}.priceband strong{font-size:28px;color:#ed4e59}.priceband p{margin:0;color:#d1ccc4}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.step{padding:20px;background:#fff;border:1px solid #e6dfd6;border-radius:14px;color:#222}.step b{display:block;margin-bottom:5px}.step small{color:#706a63}.cta{padding:42px;border-radius:20px;background:linear-gradient(110deg,#272727,#151515);display:flex;justify-content:space-between;align-items:center;gap:24px}.cta p{color:#c5c0b8;margin:5px 0 0}.page-head{padding:48px 0 36px;background:linear-gradient(120deg,#242321,#151515)}.crumb{font-size:12px;color:#aaa;margin-bottom:14px}.page-head h1{font-size:clamp(34px,4vw,48px);margin:0 0 10px;letter-spacing:-1.5px}.page-head p{margin:0;color:#c4beb6;max-width:720px}.content{padding:48px 0 70px}.content-grid{display:grid;grid-template-columns:1fr 310px;gap:28px}.prose{color:#d7d2ca}.prose h2,.prose h3{color:white;margin-top:28px}.prose li{margin:8px 0}.sidebox{background:#242424;border:1px solid var(--line);border-radius:16px;padding:22px;height:max-content}.sidebox p{color:#bdb7af;font-size:13px}.service-row{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:24px;background:#242424;border:1px solid var(--line);border-radius:16px;margin:14px 0}.service-row h3{margin:0 0 8px}.service-row p{margin:0;color:#bbb;font-size:13px}.service-price{font-size:21px;font-weight:800;white-space:nowrap}.faq details{background:#242424;border:1px solid var(--line);border-radius:13px;padding:18px 20px;margin:10px 0}.faq summary{font-weight:700;cursor:pointer}.faq details p{color:#c4beb6;font-size:14px}.form-card{background:#f5f1eb;color:#171717;border-radius:18px;padding:28px;max-width:760px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid #ddd4ca;border-radius:9px;padding:13px;background:white;font:14px "Golos Text";color:#171717}.field textarea{min-height:110px;resize:vertical}.hint{font-size:11px;color:#746d64}.notice{font-size:12px;color:#625b54;background:#eae3d9;padding:13px;border-radius:9px;margin:16px 0}.form-card .btn{width:100%}.success{display:none;padding:18px;background:#e4f1e7;color:#1e5b32;border-radius:10px;margin-top:14px}.footer{border-top:1px solid var(--line);padding:36px 0;color:#aaa;font-size:12px}.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer strong{color:#eee}.footer p{max-width:650px}.mobile-toggle{display:none}
+@media(max-width:800px){.links{display:none;position:absolute;top:78px;left:0;right:0;background:#171717;padding:20px;flex-direction:column;align-items:flex-start}.links.open{display:flex}.mobile-toggle{display:block;background:none;border:1px solid #555;color:white;padding:8px 12px;border-radius:8px}.nav>.btn{display:none}.hero-grid,.content-grid{grid-template-columns:1fr}.hero-art{min-height:250px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}.service-row{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section{padding:48px 0}}
+
+
+/* Reference-inspired visual refinement */
+body{font-size:16px;line-height:1.65}
+.brand{font-size:15px}
+.brand small{font-size:11px}
+.links{font-size:14px;gap:26px}
+.btn{font-size:15px;padding:15px 22px;border-radius:11px}
+.hero{padding:78px 0 72px;background:radial-gradient(circle at 78% 38%,#4b4037 0,transparent 38%),linear-gradient(110deg,#151515,#26221f 68%,#171717)}
+.hero h1{font-size:clamp(40px,5.2vw,66px);line-height:1.1}
+.lead{font-size:19px;line-height:1.6}
+.eyebrow{font-size:13px;letter-spacing:2.2px}
+
+
+.crest{position:relative;overflow:hidden}
+
+.hero-art{min-height:390px;border-radius:18px;border:1px solid #6c6257;background-image:linear-gradient(135deg,rgba(12,12,12,.08),rgba(12,12,12,.7)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1100&q=90');box-shadow:0 25px 70px #0009}
+
+.hero-art:after{content:"ПРАВО • ЗАКОН • ПІДТРИМКА";font-size:12px;letter-spacing:2px}
+.section{padding:76px 0}
+.section h2{font-size:38px;letter-spacing:-.8px}
+.section-intro{font-size:17px;line-height:1.65}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{padding:30px;border-radius:18px}
+.card h3{font-size:21px;line-height:1.3}
+.card p{font-size:16px;line-height:1.6}
+.icon{width:56px;height:56px;font-size:27px;border-radius:16px}
+.card a.more{font-size:15px}
+.priceband{padding:27px 32px;border:1px solid #4d4140;background:linear-gradient(110deg,#202020,#171717);box-shadow:0 12px 30px #0003}
+.priceband strong{font-size:34px}
+.priceband p{font-size:15px;line-height:1.55}
+.steps{gap:18px}
+.step{padding:24px;font-size:16px}
+.step b{font-size:17px}
+.step small{font-size:14px;line-height:1.55}
+.cta{padding:48px;border:1px solid #403b37;background:linear-gradient(110deg,#292624,#151515)}
+.cta h2{font-size:36px}
+.cta p{font-size:17px}
+.page-head{padding:58px 0 46px;background:radial-gradient(circle at 80% 50%,#39332e 0,transparent 35%),linear-gradient(110deg,#252321,#151515)}
+.crumb{font-size:14px}
+.page-head h1{font-size:clamp(38px,4.5vw,54px)}
+.page-head p{font-size:18px;line-height:1.6}
+.content{padding:56px 0 78px}
+.service-row{padding:28px 30px;border-radius:17px;background:linear-gradient(110deg,#292929,#202020)}
+.service-row h3{font-size:22px;line-height:1.35}
+.service-row p{font-size:16px;line-height:1.6}
+.service-price{font-size:25px}
+.sidebox{padding:26px}
+.sidebox h3{font-size:22px}
+.sidebox p{font-size:16px;line-height:1.7}
+.prose{font-size:17px;line-height:1.75}
+.prose h2{font-size:27px}
+.prose li{margin:11px 0}
+.faq details{padding:22px 24px}
+.faq summary{font-size:17px}
+.faq details p{font-size:16px;line-height:1.65}
+.form-card{padding:32px}
+.field label{font-size:14px}
+.field input,.field select,.field textarea{font-size:16px;padding:15px}
+.notice{font-size:14px;line-height:1.6;padding:16px}
+.footer{font-size:14px;line-height:1.65}
+.footer strong{font-size:16px}
+@media(max-width:800px){
+ .hero{padding:54px 0}
+ .hero h1{font-size:42px}
+ .lead{font-size:17px}
+ .section{padding:54px 0}
+ .section h2{font-size:31px}
+ .cards{grid-template-columns:1fr}
+ .card{padding:25px}
+ .service-row h3{font-size:20px}
+ .page-head h1{font-size:38px}
+ .page-head p{font-size:16px}
+ .priceband{align-items:flex-start;flex-direction:column}
+ .priceband strong{font-size:31px}
+}
+
+
+/* Full-width layout, larger typography and new reference-inspired photography */
+:root{--max:100%}
+.wrap{width:calc(100% - 64px);max-width:none;margin-left:auto;margin-right:auto}
+body{font-size:18px;line-height:1.7}
+.topbar{width:100%}
+.nav{min-height:86px}
+.brand{font-size:17px;gap:14px}
+.brand small{font-size:13px}
+.crest{width:46px;height:46px;font-size:25px;border-radius:13px}
+.links{font-size:15px;gap:30px}
+.btn{font-size:16px;padding:16px 25px}
+.hero{padding:76px 0 74px}
+.hero-grid{grid-template-columns:1.02fr .98fr;gap:46px}
+.hero h1{font-size:clamp(44px,5vw,76px);line-height:1.08}
+.lead{font-size:21px;line-height:1.65;max-width:760px}
+.eyebrow{font-size:14px}
+.hero-art{min-height:460px;border-radius:20px;background-image:linear-gradient(100deg,rgba(10,10,10,.02),rgba(10,10,10,.2)),url('assets/hero-legal-office.jpg');background-size:cover;background-position:65% center}
+.hero-art:after{content:"ПРАВО • ПРОЦЕДУРА • ПІДТРИМКА";font-size:13px;letter-spacing:2px}
+.trust{font-size:14px;gap:25px}
+.section{padding:84px 0}
+.section h2{font-size:42px;line-height:1.2}
+.section-intro{font-size:19px;max-width:900px;line-height:1.65}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.card{padding:34px}
+.card h3{font-size:24px}
+.card p{font-size:18px;line-height:1.65}
+.icon{width:62px;height:62px;font-size:30px}
+.card a.more{font-size:17px}
+.priceband{min-height:170px;padding:30px 36px;border:1px solid #51413e;background-image:linear-gradient(90deg,#171717 0%,rgba(23,23,23,.98) 42%,rgba(23,23,23,.35) 100%),url('assets/price-desk.jpg');background-size:cover;background-position:center 57%;border-radius:18px}
+.priceband strong{font-size:42px}
+.priceband p{font-size:17px;line-height:1.6}
+.steps{gap:20px}
+.step{padding:27px;font-size:18px}
+.step b{font-size:19px}
+.step small{font-size:16px;line-height:1.6}
+.cta{min-height:270px;padding:48px 52px;border:1px solid #403b37;background-image:linear-gradient(90deg,rgba(18,18,18,.08) 0%,rgba(18,18,18,.65) 38%,rgba(18,18,18,.96) 62%,#151515 100%),url('assets/consultation-office.jpg');background-size:cover;background-position:left center}
+.cta h2{font-size:40px}
+.cta p{font-size:19px}
+.page-head{padding:66px 0 54px}
+.crumb{font-size:15px}
+.page-head h1{font-size:clamp(42px,4.5vw,60px)}
+.page-head p{font-size:20px;line-height:1.65;max-width:900px}
+.content{padding:62px 0 86px}
+.content-grid{grid-template-columns:minmax(0,1fr) 360px;gap:36px}
+.prose{font-size:19px;line-height:1.8}
+.prose h2{font-size:31px}
+.prose h3{font-size:25px}
+.prose li{margin:12px 0}
+.sidebox{padding:30px}
+.sidebox h3{font-size:24px}
+.sidebox p{font-size:17px;line-height:1.7}
+.service-row{padding:32px 36px;gap:28px}
+.service-row h3{font-size:25px}
+.service-row p{font-size:18px;line-height:1.65}
+.service-price{font-size:29px}
+.faq details{padding:25px 28px}
+.faq summary{font-size:19px}
+.faq details p{font-size:18px;line-height:1.7}
+.form-card{padding:36px;max-width:900px}
+.field label{font-size:16px}
+.field input,.field select,.field textarea{font-size:18px;padding:16px}
+.hint,.notice{font-size:15px;line-height:1.65}
+.footer{font-size:16px;line-height:1.7;padding:42px 0}
+.footer strong{font-size:18px}
+@media(max-width:900px){
+ .wrap{width:calc(100% - 36px)}
+ .hero-grid{grid-template-columns:1fr;gap:28px}
+ .hero-art{min-height:320px}
+ .content-grid{grid-template-columns:1fr}
+ .hero h1{font-size:clamp(38px,8vw,54px)}
+ .lead{font-size:18px}
+ .section{padding:58px 0}
+ .section h2{font-size:34px}
+ .cards{grid-template-columns:1fr}
+ .priceband{align-items:flex-start;flex-direction:column;background-position:center}
+ .cta{background-position:30% center;padding:34px}
+ .cta h2{font-size:32px}
+}
+@media(max-width:560px){
+ .wrap{width:calc(100% - 28px)}
+ .nav{min-height:70px}
+ .brand{font-size:14px}
+ .brand small{font-size:11px}
+ .crest{width:38px;height:38px}
+ .hero{padding:46px 0}
+ .hero h1{font-size:38px;letter-spacing:-1px}
+ .hero-art{min-height:250px}
+ .trust{gap:12px;font-size:12px}
+ .section h2{font-size:30px}
+ .card{padding:24px}
+ .card h3{font-size:21px}
+ .card p{font-size:16px}
+ .priceband strong{font-size:35px}
+ .step{padding:20px}
+ .page-head{padding:42px 0 34px}
+ .page-head h1{font-size:36px}
+ .page-head p{font-size:17px}
+ .service-row{padding:24px}
+ .service-row h3{font-size:21px}
+ .service-row p{font-size:16px}
+ .form-card{padding:22px}
+ .cta{padding:25px;min-height:230px}
+ .cta h2{font-size:28px}
+ .cta p{font-size:16px}
+}
+
+
+/* Harmonized, reference-inspired photo treatment */
+:root{
+  --paper:#f3eee7;
+  --red:#c51f2b;
+  --red2:#9f1721;
+}
+body{background:#111;color:#f7f4ef}
+.topbar{background:rgba(17,17,17,.97);border-bottom:1px solid rgba(255,255,255,.16)}
+.brand{letter-spacing:.1px}
+.crest{border:1px solid #b9a879;color:#e3c78f;background:linear-gradient(145deg,#24211d,#111)}
+.hero{
+  min-height:600px;
+  padding:82px 0 72px;
+  background:
+    linear-gradient(90deg,rgba(12,12,12,.97) 0%,rgba(12,12,12,.88) 42%,rgba(12,12,12,.16) 100%),
+    url('assets/hero-consultation.jpg') center 44%/cover no-repeat;
+}
+.hero-grid{display:block}
+.hero-grid>div:first-child{max-width:61%;position:relative;z-index:1}
+.hero-art{display:none}
+.hero h1{font-size:clamp(42px,5.2vw,72px);max-width:900px;line-height:1.08;letter-spacing:-1.8px}
+.hero h1 em{color:#e3313b}
+.lead{font-size:21px;max-width:670px;color:#e0dbd4}
+.hero-actions .btn:first-child{font-size:18px;padding:18px 28px;box-shadow:0 10px 26px rgba(190,27,39,.22)}
+.trust{gap:18px 28px;font-size:15px;margin-top:32px}
+.trust span:before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border:1.5px solid #d8b978;border-radius:50%;color:#e5c98e;margin-right:9px}
+.section.paper{background:linear-gradient(180deg,#f5f1eb,#eee8df);color:#171717}
+.section.paper h2,.section:not(.paper) h2{font-size:clamp(34px,3.5vw,46px)}
+.paper .card{background:rgba(255,255,255,.9);border:1px solid #e7ded3;box-shadow:0 10px 28px rgba(40,28,18,.09)}
+.paper .card:hover{transform:translateY(-3px);transition:.2s}
+.paper .icon{background:#f0e9df;color:#222;border:1px solid #e7ded3}
+.priceband{
+  background:
+    linear-gradient(90deg,rgba(17,17,17,.98) 0%,rgba(17,17,17,.92) 52%,rgba(17,17,17,.25) 100%),
+    url('assets/price-desk.jpg') center/cover no-repeat;
+  color:#fff;
+}
+.priceband>div p{font-size:18px;font-weight:700;color:#f7f2ec;margin-bottom:5px}
+.priceband strong{font-size:clamp(36px,4vw,48px);color:#e52c36;line-height:1.1}
+.priceband>p{font-size:17px;line-height:1.75;color:#f3eee7}
+.priceband .btn{white-space:nowrap}
+.steps .step{background:#fffdfa;border-color:#e8dfd5;box-shadow:0 7px 20px rgba(35,25,18,.06)}
+.step b{font-size:18px}
+.step small{font-size:15px;line-height:1.65}
+.cta{
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.08) 0%,rgba(13,13,13,.45) 38%,rgba(13,13,13,.95) 64%,#111 100%),
+    url('assets/consultation-office.jpg') left center/cover no-repeat;
+  border:1px solid #3b3530;
+  box-shadow:0 18px 42px rgba(0,0,0,.2);
+}
+.cta h2{font-size:clamp(30px,3.3vw,42px)}
+.cta p{font-size:18px;line-height:1.6}
+.footer{background:#101010}
+
+/* Booking page: warm photographic header and balanced cream form panels */
+.booking-head{
+  min-height:280px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.94) 0%,rgba(13,13,13,.82) 46%,rgba(13,13,13,.28) 100%),
+    url('assets/booking-office.jpg') center 54%/cover no-repeat;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.booking-head h1{font-size:clamp(40px,4.8vw,60px);color:#fff}
+.booking-head p{font-size:20px;color:#eee7de}
+.booking-content{
+  padding:64px 0 88px;
+  background:
+    linear-gradient(115deg,rgba(20,19,18,.97),rgba(28,25,22,.93)),
+    url('assets/booking-office.jpg') center/cover no-repeat;
+}
+.booking-content .content-grid{
+  grid-template-columns:minmax(0,1.5fr) minmax(280px,.72fr);
+  align-items:start;
+  gap:30px;
+}
+.booking-page .form-card{
+  max-width:none;
+  padding:clamp(24px,3.2vw,42px);
+  border-radius:20px;
+  background:linear-gradient(145deg,#fffdf9,#f0e9df);
+  border:1px solid #e5dbce;
+  box-shadow:0 22px 60px rgba(0,0,0,.28);
+}
+.booking-page .form-grid{gap:19px 18px}
+.booking-page .field{gap:9px}
+.booking-page .field label{font-size:16px;color:#25211e}
+.booking-page .field input,
+.booking-page .field select,
+.booking-page .field textarea{
+  min-height:56px;
+  padding:16px 17px;
+  border:1px solid #d9cfc3;
+  border-radius:11px;
+  background:#fff;
+  color:#201d1a;
+  font:500 16px "Golos Text",Arial,sans-serif;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,.025);
+}
+.booking-page .field textarea{min-height:120px}
+.booking-page .field input:focus,
+.booking-page .field select:focus,
+.booking-page .field textarea:focus{
+  outline:2px solid rgba(190,31,43,.22);
+  border-color:#bd2631;
+}
+.booking-page .notice{
+  padding:16px 18px;
+  margin:20px 0;
+  border:1px solid #e4d8c9;
+  border-radius:11px;
+  background:#eee5d9;
+  color:#5d554d;
+  font-size:14px;
+}
+.booking-page .form-card>.btn{
+  min-height:58px;
+  border-radius:11px;
+  font-size:17px;
+  letter-spacing:.1px;
+  box-shadow:0 8px 18px rgba(170,25,37,.18);
+}
+.booking-page .sidebox.booking-summary{
+  height:auto;
+  padding:30px;
+  border-radius:20px;
+  background:linear-gradient(145deg,#fffdf9,#eee7de);
+  border:1px solid #e6dbce;
+  color:#211e1b;
+  box-shadow:0 22px 60px rgba(0,0,0,.24);
+}
+.booking-summary .summary-kicker{
+  color:#a7222d;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  margin-bottom:8px;
+}
+.booking-summary h3{font-size:25px;margin:0 0 23px;color:#171513}
+.booking-summary .summary-row{
+  display:flex;align-items:center;gap:15px;
+  padding:17px 0;border-bottom:1px solid #e5dbcf;
+}
+.booking-summary .summary-icon{
+  width:48px;height:48px;flex:0 0 48px;
+  display:grid;place-items:center;
+  border-radius:13px;background:#f7e7e4;color:#ad1e29;
+  font-size:25px;font-weight:800;
+}
+.booking-summary .summary-row b{display:block;font-size:17px;color:#27221e}
+.booking-summary .summary-row small{display:block;font-size:15px;color:#6c6259;margin-top:2px}
+.booking-summary .summary-row .summary-price{font-size:22px;font-weight:800;color:#b71f2b}
+.booking-summary .summary-note{
+  margin-top:22px;padding:16px;
+  background:#f2ebe2;border-radius:12px;
+  color:#655c53;font-size:14px;line-height:1.65;
+}
+.booking-page .success{
+  border:1px solid #b9d8bf;
+  font-size:15px;
+}
+@media(max-width:900px){
+  .hero{min-height:0;background-position:62% center}
+  .hero-grid>div:first-child{max-width:78%}
+  .booking-content .content-grid{grid-template-columns:1fr}
+  .booking-summary{order:-1}
+}
+@media(max-width:600px){
+  .hero{padding:54px 0 48px;background-position:66% center}
+  .hero-grid>div:first-child{max-width:100%}
+  .hero h1{font-size:39px}
+  .lead{font-size:17px}
+  .trust{font-size:12px;gap:12px}
+  .hero-actions .btn:first-child{font-size:15px;padding:15px 17px}
+  .booking-head{min-height:230px;background-position:60% center}
+  .booking-head p{font-size:17px}
+  .booking-content{padding:34px 0 55px}
+  .booking-page .form-card{padding:22px}
+  .booking-page .field input,.booking-page .field select,.booking-page .field textarea{font-size:15px}
+  .booking-summary h3{font-size:22px}
+}
+
+
+/* V6 refinement: stronger homepage hierarchy, fuller service cards and balanced pages */
+.trust{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+  max-width:1080px;
+  margin-top:34px;
+}
+.trust span{
+  display:block;
+  min-height:74px;
+  padding:14px 16px;
+  border:1px solid rgba(224,201,158,.22);
+  border-radius:12px;
+  background:rgba(18,17,16,.56);
+  color:#f5eee4;
+  font-size:16px;
+  line-height:1.35;
+}
+.trust span:before{margin-bottom:8px}
+.trust span b{display:block;font-size:17px;font-weight:800}
+.trust span small{display:block;margin-top:5px;color:#c9c0b4;font-size:13px;line-height:1.45}
+.home-service-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:34px}
+.home-service-card{padding:30px 32px 28px;min-height:340px;display:flex;flex-direction:column}
+.service-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.service-card-top .icon{margin:0;width:58px;height:58px;font-size:28px}
+.service-number{font-size:12px;letter-spacing:1.4px;font-weight:800;color:#a69a8a}
+.home-service-card h3{font-size:25px;margin:18px 0 10px;color:#211d19}
+.home-service-card p{font-size:16px;line-height:1.65;color:#655e56}
+.service-points{list-style:none;padding:0;margin:17px 0 20px;display:grid;gap:9px}
+.service-points li{position:relative;padding-left:25px;color:#514a43;font-size:15px;line-height:1.5}
+.service-points li:before{content:"✓";position:absolute;left:0;top:0;color:#ae202b;font-weight:900}
+.home-service-card .more{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:16px;border-top:1px solid #e9e0d6;font-size:15px}
+.home-service-card .more span{font-size:21px}
+.priceband{min-height:150px;margin-top:28px;padding:28px 34px;gap:26px}
+.priceband .btn{font-size:17px;padding:18px 27px}
+.section-heading{max-width:780px;margin-bottom:32px}
+.section-kicker{display:inline-block;color:#c99f70;font-size:12px;font-weight:900;letter-spacing:2px;margin-bottom:9px}
+.section-heading .section-intro{font-size:18px;max-width:740px;line-height:1.65}
+.process-section{padding-top:84px;padding-bottom:84px}
+.process-section h2{margin-bottom:8px}
+.process-section .steps{gap:20px;margin-top:34px}
+.process-section .step{position:relative;min-height:220px;padding:30px 28px 27px;border-radius:18px;border:1px solid #e7ddd1;box-shadow:0 12px 28px rgba(25,18,12,.07)}
+.step-index{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#f6e7e3;color:#a51e2a;font-size:18px;font-weight:900;margin-bottom:22px}
+.process-section .step b{font-size:21px;line-height:1.35;margin-bottom:10px}
+.process-section .step small{font-size:16px;line-height:1.65;color:#6b6259}
+.process-note{display:flex;align-items:center;gap:18px;margin-top:22px;padding:20px 24px;border-radius:15px;background:#f3eee7;border:1px solid #e6ddd2}
+.process-note>span{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:#f7e2df;color:#ad202b;font-size:26px;font-weight:900}
+.process-note b{display:block;font-size:17px;color:#25211d}
+.process-note small{display:block;font-size:14px;color:#70675e;margin-top:3px}
+.process-note .text-link{margin-left:auto;color:#a51e2a;font-weight:800;white-space:nowrap}
+.cta-section{padding-top:28px;padding-bottom:82px}
+.cta{min-height:300px;padding:48px 52px}
+.cta-copy{max-width:580px}
+.cta .section-kicker{color:#e2bd8d}
+.cta h2{font-size:clamp(38px,4vw,52px);margin:0 0 8px}
+.cta p{font-size:18px;max-width:540px}
+.cta-price{display:grid;grid-template-columns:auto auto;align-items:baseline;gap:2px 14px;margin-top:20px}
+.cta-price small{grid-column:1/-1;color:#d2c7b9;font-size:14px}
+.cta-price strong{color:#f0525b;font-size:34px;line-height:1.2}
+.cta-price span{font-size:14px;color:#ded5ca}
+.cta .cta-button{font-size:18px;padding:21px 30px;min-height:66px;white-space:nowrap;box-shadow:0 12px 30px rgba(180,25,36,.28)}
+.cta-button span{margin-left:8px;font-size:21px}
+.booking-page .content-grid{grid-template-columns:minmax(0,1.45fr) minmax(330px,.85fr);align-items:stretch;gap:32px}
+.booking-page .form-card{display:flex;flex-direction:column;justify-content:center}
+.booking-summary{display:flex;flex-direction:column}
+.booking-summary .summary-row:last-of-type{border-bottom:0}
+.booking-summary .summary-includes{margin-top:22px;padding:20px 20px 18px;border-radius:14px;background:#f7f1e9}
+.booking-summary .summary-includes>b{font-size:17px;color:#29231e}
+.booking-summary .summary-includes ul{list-style:none;padding:0;margin:13px 0 0;display:grid;gap:11px}
+.booking-summary .summary-includes li{position:relative;padding-left:24px;color:#62594f;font-size:14px;line-height:1.5}
+.booking-summary .summary-includes li:before{content:"✓";position:absolute;left:0;color:#a9212c;font-weight:900}
+.booking-summary .summary-note{margin-top:auto}
+.contact-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.contact-cards .card{min-height:220px;padding:30px;display:flex;flex-direction:column}
+.contact-cards .card h3{font-size:22px;margin-bottom:12px}
+.contact-cards .card p{font-size:16px;line-height:1.7}
+.contact-cards .icon{width:58px;height:58px;font-size:27px}
+.contact-cards .hint{display:inline-block;margin-top:7px;font-size:13px;line-height:1.5}
+
+/* Services page */
+.services-head{padding:68px 0 58px;background:radial-gradient(circle at 82% 25%,rgba(143,104,71,.2),transparent 35%),linear-gradient(120deg,#262321,#111)}
+.services-head h1{max-width:850px;font-size:clamp(42px,5vw,62px);line-height:1.1}
+.services-head p{max-width:800px;font-size:19px;line-height:1.65}
+.services-head-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.services-head-meta span{padding:10px 15px;border:1px solid rgba(220,190,150,.25);border-radius:999px;color:#e8dfd3;background:#ffffff08;font-size:14px}
+.services-content{background:linear-gradient(180deg,#f4f0e9,#eae3d9);color:#211d19;padding:62px 0 78px}
+.services-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:30px}
+.services-intro h2{font-size:clamp(30px,3.3vw,42px);line-height:1.15;margin:0;color:#211d19}
+.services-intro>p{max-width:530px;margin:0;color:#6a6259;font-size:16px;line-height:1.7}
+.service-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.service-feature{overflow:hidden;border-radius:20px;background:#fffdfa;border:1px solid #e3d9cd;box-shadow:0 16px 38px rgba(43,32,22,.09)}
+.service-feature-visual{min-height:170px;padding:25px 28px;display:flex;align-items:flex-end;justify-content:space-between;background:linear-gradient(110deg,rgba(18,17,16,.9),rgba(18,17,16,.25)),url('assets/price-desk.jpg') center/cover}
+.disability-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.9),rgba(18,17,16,.25)),url('assets/consultation-office.jpg') center/cover}
+.feature-icon{display:grid;place-items:center;width:58px;height:58px;border-radius:16px;background:#fff2;color:#fff;border:1px solid #ffffff66;font-size:30px}
+.feature-label{font-size:12px;font-weight:900;letter-spacing:1.4px;color:#fff;text-align:right}
+.service-feature-body{padding:28px 30px 32px}
+.feature-topline{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#9b7960;font-size:11px;letter-spacing:1.2px;font-weight:900}
+.feature-topline strong{font-size:20px;letter-spacing:0;color:#b3222d;white-space:nowrap}
+.service-feature h3{font-size:27px;line-height:1.25;margin:15px 0 10px;color:#211d19}
+.service-feature-body>p{font-size:15px;line-height:1.7;color:#655d54;margin:0}
+.service-feature ul{list-style:none;padding:0;margin:20px 0 25px;display:grid;gap:11px}
+.service-feature li{position:relative;padding-left:26px;font-size:14px;line-height:1.55;color:#4f4942}
+.service-feature li:before{content:"✓";position:absolute;left:0;color:#b2222d;font-weight:900}
+.service-feature .btn{font-size:15px;padding:15px 19px}
+.service-price-panel{display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:28px;margin-top:28px;padding:30px 34px;border-radius:18px;background:linear-gradient(110deg,#1b1b1b,#292522);color:#fff;box-shadow:0 15px 34px rgba(0,0,0,.15)}
+.service-price-panel .section-kicker{margin:0;color:#d8b77e}
+.service-price-panel h2{font-size:38px;color:#f04b55;margin:5px 0}
+.service-price-panel h2 small{font-size:15px;color:#f1e8dc;font-weight:600}
+.service-price-panel p{font-size:14px;color:#d5ccc1;margin:0}
+.price-panel-points{display:grid;gap:9px}
+.price-panel-points span{font-size:14px;color:#e8e0d7}
+.price-panel-points span:first-letter{color:#f0525b}
+.service-price-panel .btn{white-space:nowrap}
+.services-disclaimer{margin-top:22px;padding:18px 20px;border:1px solid #ded3c6;border-radius:12px;color:#6c6258;background:#eee7de;font-size:14px;line-height:1.65}
+@media(max-width:900px){
+ .trust{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .booking-page .content-grid{grid-template-columns:1fr}
+ .booking-summary{order:-1}
+ .service-price-panel{grid-template-columns:1fr 1fr}
+ .service-price-panel .btn{grid-column:1/-1;justify-self:start}
+}
+@media(max-width:700px){
+ .trust{grid-template-columns:1fr 1fr;gap:10px}
+ .trust span{padding:12px;font-size:14px;min-height:80px}
+ .trust span b{font-size:15px}
+ .trust span small{font-size:12px}
+ .home-service-cards,.service-feature-grid,.contact-cards{grid-template-columns:1fr}
+ .home-service-card{min-height:0;padding:24px}
+ .process-section .steps{grid-template-columns:1fr}
+ .process-section .step{min-height:0}
+ .process-note{align-items:flex-start;flex-wrap:wrap}
+ .process-note .text-link{margin-left:66px}
+ .cta{padding:30px 25px;min-height:0;align-items:flex-start;flex-direction:column}
+ .cta .cta-button{white-space:normal;width:100%;justify-content:center;text-align:center}
+ .cta-price{grid-template-columns:1fr}
+ .cta-price small{grid-column:auto}
+ .cta-price span{margin-top:3px}
+ .services-intro{display:block}
+ .services-intro>p{margin-top:14px}
+ .services-head{padding:50px 0 42px}
+ .services-head-meta{gap:8px}
+ .services-head-meta span{font-size:12px}
+ .service-feature-visual{min-height:140px}
+ .service-feature-body{padding:23px}
+ .service-feature h3{font-size:24px}
+ .service-price-panel{grid-template-columns:1fr;padding:25px}
+ .service-price-panel .btn{grid-column:auto;width:100%;text-align:center}
+ .contact-cards .card{min-height:0}
+}
+
+
+/* V7: fuller layouts, stronger typography and modern inner pages */
+.nav{gap:30px}
+.links{font-size:16px;gap:clamp(22px,2.2vw,38px)}
+.links a{padding:9px 0;white-space:nowrap}
+.nav>.btn{font-size:16px;padding:17px 27px;white-space:nowrap}
+.hero{min-height:0;padding:66px 0 58px}
+.hero-grid>div:first-child{max-width:72%;margin:auto 0}
+.hero h1{max-width:1050px;font-size:clamp(46px,5.1vw,78px)}
+.lead{max-width:820px;font-size:22px}
+.trust{width:min(100%,1180px);max-width:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:38px}
+.trust span{min-height:112px;padding:18px 18px 16px;font-size:16px}
+.trust span b{font-size:18px;line-height:1.35}
+.trust span small{font-size:14px;line-height:1.55}
+.help-intro{text-align:center;max-width:1080px;margin:0 auto 42px}
+.help-intro .section-kicker{color:#a57b54}
+.help-intro h2{margin:0 auto 16px;font-size:clamp(40px,4vw,54px)}
+.help-intro .section-intro{max-width:1000px;margin:0 auto;font-size:21px;line-height:1.75}
+.home-service-cards{align-items:stretch;gap:28px;margin-top:0}
+.home-service-card{min-height:440px;padding:38px 40px 34px}
+.home-service-card h3{font-size:clamp(27px,2.4vw,34px);line-height:1.25;margin:23px 0 14px}
+.home-service-card p{font-size:19px;line-height:1.75}
+.service-card-top .icon{width:68px;height:68px;font-size:32px}
+.service-number{font-size:14px;letter-spacing:1.6px}
+.service-points{gap:13px;margin:22px 0 25px}
+.service-points li{font-size:17px;line-height:1.65;padding-left:29px}
+.home-service-card .more{font-size:18px;padding-top:20px}
+.home-service-card .more span{font-size:25px}
+.priceband{margin-top:34px;min-height:178px;padding:32px 42px}
+.priceband .btn{font-size:19px;padding:20px 34px}
+.process-section{padding-top:94px;padding-bottom:96px}
+.section-heading{max-width:1050px;margin:0 auto 40px;text-align:center}
+.section-heading h2{font-size:clamp(40px,4vw,54px)}
+.section-heading .section-intro{max-width:100%;font-size:21px;line-height:1.7}
+.process-section .steps{gap:24px;margin-top:0}
+.process-section .step{min-height:285px;padding:34px 32px 32px;border-radius:20px}
+.step-index{width:62px;height:62px;font-size:22px;margin-bottom:28px}
+.process-section .step b{font-size:24px;line-height:1.35;margin-bottom:14px}
+.process-section .step small{font-size:18px;line-height:1.75}
+.cta{min-height:320px;padding:52px 58px}
+.cta .cta-button{font-size:20px;padding:23px 34px;min-height:76px}
+.cta-price strong{font-size:40px}
+.footer-grid>div:first-child{max-width:650px}
+.footer-grid>div:nth-child(2){display:none}
+
+/* Service cards occupy their available space with clear, large actions */
+.service-feature-grid{align-items:stretch;gap:30px}
+.service-feature{display:flex;flex-direction:column}
+.service-feature-visual{min-height:205px;padding:30px 34px}
+.service-feature-body{padding:34px 36px 38px;display:flex;flex-direction:column;flex:1}
+.service-feature h3{font-size:clamp(30px,2.6vw,38px);line-height:1.2}
+.service-feature-body>p{font-size:18px;line-height:1.8}
+.service-feature ul{gap:14px;margin:25px 0 30px}
+.service-feature li{font-size:17px;line-height:1.7;padding-left:30px}
+.service-feature .btn{width:100%;min-height:64px;margin-top:auto;font-size:18px;padding:19px 24px}
+.service-price-panel{grid-template-columns:1fr 1fr auto;gap:34px;padding:34px 40px}
+.service-price-panel .btn{font-size:18px;padding:20px 25px;min-height:64px}
+.services-head h1{max-width:1100px;font-size:clamp(48px,5vw,68px)}
+.services-head p{font-size:21px;max-width:1050px}
+.services-head-meta span{font-size:15px;padding:12px 18px}
+
+/* Booking summary: more readable, visually balanced with the form */
+.booking-content .content-grid{grid-template-columns:minmax(0,1.55fr) minmax(330px,.72fr);gap:34px}
+.booking-page .sidebox.booking-summary{padding:34px 32px}
+.booking-summary h3{font-size:29px;margin-bottom:26px}
+.booking-summary .summary-row{padding:21px 0;gap:18px}
+.booking-summary .summary-icon{width:54px;height:54px;flex-basis:54px;font-size:28px}
+.booking-summary .summary-row b{font-size:19px}
+.booking-summary .summary-row small{font-size:17px}
+.booking-summary .summary-row .summary-price{font-size:27px}
+.booking-summary .summary-includes{margin-top:24px;padding:23px}
+.booking-summary .summary-includes>b{font-size:20px}
+.booking-summary .summary-includes ul{gap:14px}
+.booking-summary .summary-includes li{font-size:16px;line-height:1.65}
+.booking-summary .summary-note{font-size:16px;line-height:1.7;padding:19px}
+
+/* About page */
+.about-head{background:linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.68)),url('assets/consultation-office.jpg') center/cover}
+.about-head h1,.faq-head h1,.contacts-head h1{max-width:1100px}
+.about-content{background:linear-gradient(180deg,#f4efe8,#eae3da);color:#211d19;padding-top:68px}
+.about-lead{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-photo{min-height:440px;border-radius:22px;background:linear-gradient(0deg,rgba(0,0,0,.15),rgba(0,0,0,.02)),url('assets/consultation-office.jpg') center/cover;box-shadow:0 22px 50px rgba(36,25,15,.16)}
+.about-lead-copy{padding:24px 0}
+.about-lead-copy .section-kicker,.about-section-title .section-kicker,.about-scope .section-kicker{color:#a57b54}
+.about-lead-copy h2,.about-section-title h2,.about-scope h2{font-size:clamp(34px,3.2vw,46px);line-height:1.2;color:#211d19;margin:0 0 18px}
+.about-lead-copy p,.about-scope p{font-size:18px;line-height:1.8;color:#62594f;margin:0 0 26px}
+.about-principles{padding:88px 0 76px}
+.about-section-title{text-align:center;max-width:850px;margin:0 auto 38px}
+.about-section-title p{font-size:18px;line-height:1.7;color:#6b6258}
+.principle-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.principle-card{position:relative;min-height:270px;padding:30px 26px;border-radius:18px;background:#fffdfa;border:1px solid #e4dacf;box-shadow:0 12px 30px rgba(35,25,18,.06)}
+.principle-card>span{position:absolute;right:22px;top:20px;color:#b9a38b;font-size:14px;font-weight:900;letter-spacing:1px}
+.principle-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:16px;background:#f5e8e3;color:#a9212b;font-size:28px;margin-bottom:25px}
+.principle-card h3{font-size:21px;color:#211d19;margin:0 0 10px}
+.principle-card p{font-size:16px;line-height:1.7;color:#6a6158;margin:0}
+.about-scope{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:34px;border-radius:20px;background:#211f1d;color:#f8f2e9}
+.about-scope h2{color:#fff}
+.about-scope p{color:#d2c9be;margin:0}
+.about-scope aside{padding:25px 27px;border-radius:15px;background:#ffffff0d;border:1px solid #ffffff20}
+.about-scope aside b{font-size:19px;color:#fff}
+.about-scope aside p{font-size:15px;margin-top:10px}
+.about-bottom-cta{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:30px;padding:34px 38px;border-radius:18px;background:#fffdfa;border:1px solid #e3d8cc}
+.about-bottom-cta h2{font-size:28px;color:#211d19;margin:0 0 5px}
+.about-bottom-cta p{font-size:16px;color:#6b6258;margin:0}
+.about-bottom-cta .btn{font-size:17px;padding:19px 27px;white-space:nowrap}
+
+/* FAQ page */
+.faq-head{background:linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.72)),url('assets/booking-office.jpg') center 54%/cover}
+.faq-content{background:linear-gradient(180deg,#f4efe8,#eae3da);color:#211d19;padding:68px 0 85px}
+.faq-layout{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.5fr);gap:54px;align-items:start}
+.faq-intro{position:sticky;top:120px}
+.faq-intro>.section-kicker{color:#a57b54}
+.faq-intro h2{font-size:clamp(32px,3vw,42px);line-height:1.2;color:#211d19;margin:0 0 15px}
+.faq-intro>p{font-size:17px;line-height:1.75;color:#6b6258}
+.faq-side-card{margin-top:30px;padding:27px;border-radius:18px;background:#211f1d;color:#fff;border:1px solid #39332d}
+.faq-side-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:#f4e4e0;color:#a9212b;font-size:27px;font-weight:900;margin-bottom:18px}
+.faq-side-card b,.faq-side-card span{display:block}
+.faq-side-card b{font-size:19px}
+.faq-side-card span{font-size:15px;color:#d0c6bb;line-height:1.65;margin:8px 0 20px}
+.faq-side-card .btn{width:100%;font-size:16px}
+.faq{display:grid;gap:14px}
+.faq details{margin:0;padding:0;overflow:hidden;border:1px solid #e2d8cc;border-radius:16px;background:#fffdfa;box-shadow:0 8px 22px rgba(35,25,18,.05);color:#211d19}
+.faq summary{position:relative;list-style:none;padding:24px 62px 24px 25px;font-size:18px;line-height:1.5;font-weight:800}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:23px;top:50%;transform:translateY(-50%);width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#f5e8e3;color:#a9212b;font-size:22px}
+.faq details[open] summary:after{content:"−"}
+.faq details p{margin:0;padding:0 25px 25px;color:#6a6158;font-size:16px;line-height:1.8}
+
+/* Contacts page */
+.contacts-head{background:linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.72)),url('assets/hero-legal-office.jpg') center/cover}
+.contacts-content{background:linear-gradient(180deg,#f4efe8,#eae3da);padding-top:54px}
+.contacts-photo-panel{min-height:290px;display:flex;align-items:center;padding:44px 52px;margin-bottom:30px;border-radius:22px;background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.62),rgba(15,15,15,.12)),url('assets/consultation-office.jpg') center 54%/cover;box-shadow:0 18px 42px rgba(34,24,15,.13)}
+.contacts-photo-panel>div{max-width:600px}
+.contacts-photo-panel h2{font-size:clamp(34px,3.4vw,46px);line-height:1.2;margin:0 0 10px;color:#fff}
+.contacts-photo-panel p{font-size:18px;line-height:1.7;color:#eee5da;margin:0 0 22px}
+.contacts-photo-panel .section-kicker{color:#e2bd8d}
+.contacts-content .contact-cards{width:100%;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.contacts-content .contact-cards .card{min-height:230px;padding:30px;background:#fffdfa;border:1px solid #e3d8cc;box-shadow:0 12px 30px rgba(35,25,18,.06)}
+.contacts-content .contact-cards .card h3{font-size:23px;color:#211d19}
+.contacts-content .contact-cards .card p{font-size:17px;line-height:1.7;color:#62594f}
+.contacts-content .contact-cards .icon{width:60px;height:60px}
+
+/* Responsive refinements */
+@media(max-width:1000px){
+ .hero-grid>div:first-child{max-width:88%}
+ .trust{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .faq-layout{grid-template-columns:1fr;gap:28px}
+ .faq-intro{position:static}
+ .faq-side-card{max-width:520px}
+ .about-lead{gap:28px}
+ .service-price-panel{grid-template-columns:1fr 1fr}
+ .service-price-panel .btn{grid-column:1/-1;justify-self:start}
+}
+@media(max-width:700px){
+ .nav{gap:10px}
+ .links{font-size:15px;gap:18px}
+ .hero{padding:48px 0}
+ .hero-grid>div:first-child{max-width:100%}
+ .hero h1{font-size:40px}
+ .trust{grid-template-columns:1fr 1fr;gap:10px}
+ .trust span{min-height:105px;padding:13px}
+ .trust span b{font-size:15px}
+ .trust span small{font-size:12px}
+ .help-intro{margin-bottom:28px}
+ .help-intro h2{font-size:34px}
+ .help-intro .section-intro{font-size:17px}
+ .home-service-card{min-height:0;padding:25px}
+ .home-service-card h3{font-size:25px}
+ .home-service-card p{font-size:16px}
+ .service-points li{font-size:15px}
+ .process-section .steps{grid-template-columns:1fr}
+ .process-section .step{min-height:0;padding:25px}
+ .process-section .step b{font-size:21px}
+ .process-section .step small{font-size:16px}
+ .cta{padding:28px;min-height:0}
+ .cta .cta-button{width:100%;white-space:normal;text-align:center}
+ .service-feature-body{padding:25px}
+ .service-feature h3{font-size:28px}
+ .service-feature-body>p{font-size:16px}
+ .service-feature li{font-size:15px}
+ .service-feature .btn{font-size:16px}
+ .service-price-panel{grid-template-columns:1fr}
+ .service-price-panel .btn{grid-column:auto;width:100%}
+ .booking-content .content-grid{grid-template-columns:1fr}
+ .booking-summary{order:-1}
+ .booking-page .sidebox.booking-summary{padding:25px}
+ .about-lead{grid-template-columns:1fr}
+ .about-photo{min-height:270px}
+ .about-lead-copy h2{font-size:32px}
+ .about-principles{padding:60px 0}
+ .principle-grid{grid-template-columns:1fr}
+ .principle-card{min-height:0}
+ .about-scope{grid-template-columns:1fr;padding:25px}
+ .about-bottom-cta{align-items:flex-start;flex-direction:column;padding:25px}
+ .about-bottom-cta .btn{width:100%;white-space:normal}
+ .faq-content{padding:45px 0 60px}
+ .faq summary{font-size:16px;padding:20px 56px 20px 18px}
+ .faq details p{font-size:15px;padding:0 18px 20px}
+ .contacts-photo-panel{padding:28px 24px;min-height:270px}
+ .contacts-content .contact-cards{grid-template-columns:1fr}
+ .contacts-content .contact-cards .card{min-height:0}
+}
+
+
+/* v8 refinement: keep the cards compact, but let their typography fill them */
+@media (min-width: 701px) {
+  .hero-grid > div:first-child {
+    max-width: 91%;
+  }
+  .hero h1 {
+    max-width: 1240px;
+    font-size: clamp(48px, 5.25vw, 82px);
+  }
+  .lead {
+    max-width: 980px;
+    font-size: 23px;
+    line-height: 1.7;
+  }
+  .trust {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+  }
+  .trust span {
+    min-height: 106px;
+    padding: 17px 20px;
+  }
+
+  .home-service-cards {
+    gap: 24px;
+  }
+  .home-service-card {
+    min-height: 355px;
+    padding: 30px 32px 26px;
+  }
+  .home-service-card h3 {
+    font-size: clamp(27px, 2.15vw, 32px);
+    line-height: 1.28;
+    margin: 17px 0 11px;
+  }
+  .home-service-card p {
+    font-size: 20px;
+    line-height: 1.72;
+  }
+  .service-card-top .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 29px;
+  }
+  .service-points {
+    gap: 10px;
+    margin: 17px 0 18px;
+  }
+  .service-points li {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .home-service-card .more {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .process-section .steps {
+    gap: 20px;
+  }
+  .process-section .step {
+    min-height: 225px;
+    padding: 25px 27px 24px;
+    border-radius: 18px;
+  }
+  .step-index {
+    width: 54px;
+    height: 54px;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .process-section .step b {
+    font-size: 23px;
+    line-height: 1.32;
+    margin-bottom: 10px;
+  }
+  .process-section .step small {
+    font-size: 19px;
+    line-height: 1.68;
+  }
+}
+
+
+/* v9: clearer hero feature tiles, stronger calls to action and section intro */
+@media (min-width: 1001px) {
+  .nav {
+    min-height: 86px;
+    gap: 30px;
+  }
+  .links {
+    font-size: 16px;
+    gap: 30px;
+  }
+  .nav > .btn {
+    font-size: 18px;
+    padding: 18px 29px;
+    min-height: 58px;
+    border-radius: 13px;
+  }
+
+  .hero-actions .btn {
+    font-size: 18px;
+    padding: 19px 29px;
+    min-height: 62px;
+    border-radius: 13px;
+  }
+  .hero-actions {
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .trust {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    margin-top: 34px;
+  }
+  .trust span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 126px;
+    padding: 18px 17px 17px 48px;
+    border: 1px solid rgba(212,185,160,.28);
+    border-radius: 13px;
+    background: rgba(18,17,16,.58);
+  }
+  .trust span:before {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    border: 1px solid #c9a66c;
+    border-radius: 50%;
+    font-size: 16px;
+  }
+  .trust span b {
+    display: block;
+    font-size: 18px;
+    line-height: 1.35;
+    margin: 0 0 7px;
+  }
+  .trust span small {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #d6c9b9;
+  }
+
+  .help-intro {
+    max-width: 1320px;
+    margin-bottom: 46px;
+  }
+  .help-intro .section-kicker {
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    margin-bottom: 13px;
+  }
+  .help-intro h2 {
+    font-size: clamp(48px, 4.3vw, 62px);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+  .help-intro .section-intro {
+    max-width: 1220px;
+    font-size: 24px;
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 701px) {
+  .nav > .btn {font-size:16px;padding:15px 22px}
+  .links {font-size:15px;gap:18px}
+  .hero-actions .btn {font-size:16px;padding:16px 22px}
+  .trust span b {font-size:17px}
+  .trust span small {font-size:14px;line-height:1.5}
+  .help-intro .section-kicker {font-size:14px}
+  .help-intro .section-intro {font-size:20px}
+}
+
+@media (max-width: 700px) {
+  .nav > .btn {font-size:14px;padding:12px 15px}
+  .hero-actions .btn {font-size:15px;padding:15px 18px}
+  .trust span {position:relative;padding-left:38px}
+  .trust span:before {position:absolute;left:12px;top:13px;margin:0}
+  .help-intro .section-kicker {font-size:12px}
+  .help-intro .section-intro {font-size:17px;line-height:1.65}
+}
+
+
+/* v10 typography refinement: enlarge text without enlarging the cards */
+@media (min-width: 1001px) {
+  /* Hero eyebrow and supporting line */
+  .hero .eyebrow {
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+  }
+  .hero .lead {
+    font-size: 27px;
+    line-height: 1.65;
+    max-width: 1120px;
+  }
+
+  /* Lower feature tiles: stronger, more readable text */
+  .trust span b {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 9px;
+  }
+  .trust span small {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* Consultation process: preserve the existing compact card dimensions */
+  .process-section h2 {
+    font-size: clamp(44px, 3.8vw, 58px);
+    line-height: 1.18;
+  }
+  .process-section > .wrap > p,
+  .process-section .section-intro {
+    font-size: 23px;
+    line-height: 1.65;
+  }
+  .process-section .step {
+    min-height: 225px;
+    padding: 25px 27px 24px;
+  }
+  .process-section .step b {
+    font-size: 26px;
+    line-height: 1.35;
+    margin-bottom: 13px;
+  }
+  .process-section .step small {
+    font-size: 21px;
+    line-height: 1.7;
+  }
+  .step-index {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  /* Bottom call-to-action: use more of the available horizontal space */
+  .cta-copy {
+    max-width: 850px;
+  }
+  .cta .section-kicker {
+    font-size: 19px;
+    letter-spacing: 2.4px;
+    margin-bottom: 12px;
+  }
+  .cta h2 {
+    font-size: clamp(48px, 4.5vw, 62px);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .cta p {
+    max-width: 760px;
+    font-size: 23px;
+    line-height: 1.7;
+  }
+  .cta-price {
+    margin-top: 25px;
+    gap: 5px 18px;
+  }
+  .cta-price small {
+    font-size: 18px;
+  }
+  .cta-price strong {
+    font-size: 48px;
+  }
+  .cta-price span {
+    font-size: 17px;
+  }
+  .cta .cta-button {
+    font-size: 22px;
+    padding: 25px 36px;
+    min-height: 82px;
+  }
+}
+
+/* Keep the larger type balanced on tablets and phones */
+@media (max-width: 1000px) and (min-width: 701px) {
+  .hero .eyebrow {font-size:15px}
+  .hero .lead {font-size:22px;line-height:1.6}
+  .trust span b {font-size:18px}
+  .trust span small {font-size:15px}
+  .process-section .step b {font-size:22px}
+  .process-section .step small {font-size:18px}
+  .cta .section-kicker {font-size:16px}
+  .cta h2 {font-size:38px}
+  .cta p {font-size:19px;line-height:1.6}
+}
+
+@media (max-width: 700px) {
+  .hero .eyebrow {font-size:13px;letter-spacing:1.6px}
+  .hero .lead {font-size:18px;line-height:1.6}
+  .trust span b {font-size:16px}
+  .trust span small {font-size:13px;line-height:1.5}
+  .process-section .step b {font-size:20px}
+  .process-section .step small {font-size:16px;line-height:1.6}
+  .cta .section-kicker {font-size:14px}
+  .cta h2 {font-size:32px}
+  .cta p {font-size:17px;line-height:1.6}
+  .cta-price strong {font-size:36px}
+}
+
+/* v11: typography-only correction — preserve the existing card dimensions */
+@media (min-width: 1001px) {
+  .trust span b { font-size:22px; line-height:1.35; }
+  .trust span small { font-size:18px; line-height:1.55; }
+  .process-section .section-kicker { font-size:19px; line-height:1.5; letter-spacing:2.8px; }
+  .process-section h2 { font-size:clamp(48px,4vw,62px); line-height:1.16; letter-spacing:-0.025em; }
+  .process-section .section-intro { max-width:1450px; font-size:25px; line-height:1.65; }
+  /* Typography only: do not change card width, height, padding or grid. */
+  .process-section .step b { font-size:27px; line-height:1.32; }
+  .process-section .step small { font-size:22px; line-height:1.62; }
+}
+@media (max-width: 1000px) and (min-width: 701px) {
+  .process-section .section-kicker {font-size:16px}
+  .process-section h2 {font-size:44px}
+  .process-section .section-intro {font-size:21px;line-height:1.6}
+  .process-section .step b {font-size:23px}
+  .process-section .step small {font-size:19px;line-height:1.6}
+}
+@media (max-width: 700px) {
+  .process-section .section-kicker {font-size:14px;letter-spacing:1.8px}
+  .process-section h2 {font-size:34px;line-height:1.2}
+  .process-section .section-intro {font-size:18px;line-height:1.6}
+  .process-section .step b {font-size:21px}
+  .process-section .step small {font-size:17px;line-height:1.6}
+  .trust span b {font-size:17px}
+  .trust span small {font-size:14px;line-height:1.5}
+}
+
+/* v12: enlarge only the consultation section label and heading; keep cards unchanged */
+@media (min-width: 1001px) {
+  .help-intro .section-kicker {
+    font-size: 21px !important;
+    line-height: 1.5;
+    letter-spacing: 2.8px;
+    margin-bottom: 16px;
+  }
+  .help-intro h2 {
+    font-size: clamp(58px, 5vw, 72px) !important;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 701px) {
+  .help-intro .section-kicker { font-size: 17px !important; line-height: 1.5; }
+  .help-intro h2 { font-size: 48px !important; line-height: 1.15; }
+}
+@media (max-width: 700px) {
+  .help-intro .section-kicker { font-size: 14px !important; line-height: 1.5; letter-spacing: 1.8px; }
+  .help-intro h2 { font-size: 36px !important; line-height: 1.18; }
+}
+
+/* v13: services page typography and intro layout refinement */
+.services-head > .wrap > .section-kicker {
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 2.6px;
+  margin-bottom: 14px;
+}
+.services-head-meta {
+  gap: 14px;
+  margin-top: 30px;
+}
+.services-head-meta span {
+  font-size: 17px;
+  line-height: 1.4;
+  padding: 13px 20px;
+}
+.services-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 76px);
+  margin-bottom: 34px;
+}
+.services-intro .section-kicker {
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 2.6px;
+  margin-bottom: 13px;
+}
+.services-intro h2 {
+  font-size: clamp(42px, 4vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -1.4px;
+}
+.services-intro > p {
+  max-width: none;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 24px 28px;
+  border-left: 4px solid #b52a32;
+  border-radius: 0 16px 16px 0;
+  background: rgba(255,255,255,.58);
+  box-shadow: 0 10px 28px rgba(43,32,22,.055);
+  color: #514940;
+  font-size: 19px;
+  line-height: 1.75;
+}
+@media (max-width: 900px) {
+  .services-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .services-intro > p {
+    min-height: 0;
+  }
+}
+@media (max-width: 700px) {
+  .services-head > .wrap > .section-kicker,
+  .services-intro .section-kicker {
+    font-size: 14px;
+    letter-spacing: 1.8px;
+  }
+  .services-head-meta span {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .services-intro h2 {
+    font-size: 35px;
+    line-height: 1.18;
+  }
+  .services-intro > p {
+    padding: 18px 20px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+
+/* v14: match the user's marked-up service-page hierarchy and price-panel layout */
+@media (min-width: 1001px) {
+  /* Service topic cards: enlarge the actual text, not the cards */
+  .feature-label {
+    font-size: 16px;
+    line-height: 1.45;
+    letter-spacing: 1.7px;
+  }
+  .feature-topline {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1.45px;
+  }
+  .feature-topline strong {
+    font-size: 27px;
+    line-height: 1.25;
+  }
+  .service-feature h3 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 17px 0 12px;
+  }
+  .service-feature-body > p {
+    font-size: 19px;
+    line-height: 1.72;
+  }
+  .service-feature ul {
+    gap: 13px;
+    margin: 23px 0 27px;
+  }
+  .service-feature li {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 30px;
+  }
+  .service-feature li:before {
+    font-size: 20px;
+    top: 0;
+  }
+  .service-feature .btn {
+    font-size: 19px;
+    padding: 19px 24px;
+    min-height: 62px;
+  }
+
+  /* Recompose the single-price panel like the user's drawing:
+     price on the left, inclusions in the middle, booking action on the right. */
+  .service-price-panel {
+    grid-template-columns: minmax(300px, .9fr) minmax(390px, 1.35fr) auto;
+    gap: clamp(28px, 4vw, 72px);
+    min-height: 200px;
+    padding: 34px 40px;
+  }
+  .service-price-panel > div:first-child {
+    align-self: center;
+  }
+  .service-price-panel .section-kicker {
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+  }
+  .service-price-panel h2 {
+    font-size: 54px;
+    line-height: 1.12;
+    margin: 8px 0 8px;
+    white-space: nowrap;
+  }
+  .service-price-panel h2 small {
+    font-size: 19px;
+  }
+  .service-price-panel p {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .price-panel-points {
+    gap: 14px;
+    justify-self: center;
+    width: 100%;
+  }
+  .price-panel-points span {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .service-price-panel > .btn {
+    justify-self: end;
+    font-size: 20px;
+    min-height: 70px;
+    padding: 22px 30px;
+  }
+
+  /* Page title area: stronger breadcrumb, kicker, heading and meta chips */
+  .services-head .crumb {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+  .services-head > .wrap > .section-kicker {
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+  .services-head h1 {
+    max-width: 1250px;
+    font-size: clamp(58px, 5.2vw, 78px);
+    line-height: 1.12;
+    letter-spacing: -1.8px;
+    margin-bottom: 16px;
+  }
+  .services-head p {
+    max-width: 1120px;
+    font-size: 23px;
+    line-height: 1.7;
+  }
+  .services-head-meta {
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .services-head-meta span {
+    font-size: 19px;
+    line-height: 1.45;
+    padding: 15px 22px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 701px) {
+  .feature-label {font-size:14px}
+  .feature-topline {font-size:13px}
+  .feature-topline strong {font-size:23px}
+  .service-feature h3 {font-size:30px}
+  .service-feature-body > p {font-size:17px}
+  .service-feature li {font-size:16px;line-height:1.55}
+  .service-feature .btn {font-size:17px}
+  .service-price-panel {
+    grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);
+    gap:22px;
+    padding:28px;
+  }
+  .service-price-panel h2 {font-size:44px}
+  .service-price-panel h2 small {font-size:17px}
+  .service-price-panel p,.price-panel-points span {font-size:16px}
+  .service-price-panel > .btn {
+    grid-column:1/-1;
+    justify-self:end;
+    font-size:18px;
+  }
+  .services-head .crumb {font-size:15px}
+  .services-head > .wrap > .section-kicker {font-size:18px}
+  .services-head h1 {font-size:52px}
+  .services-head p {font-size:20px}
+  .services-head-meta span {font-size:16px}
+}
+
+@media (max-width: 700px) {
+  .feature-label {font-size:11px;letter-spacing:1px}
+  .feature-topline {font-size:11px;letter-spacing:.7px}
+  .feature-topline strong {font-size:21px}
+  .service-feature h3 {font-size:27px;line-height:1.22}
+  .service-feature-body > p {font-size:17px;line-height:1.65}
+  .service-feature li {font-size:16px;line-height:1.55}
+  .service-feature .btn {font-size:16px;min-height:54px}
+  .service-price-panel h2 {font-size:42px;line-height:1.15}
+  .service-price-panel h2 small {font-size:16px}
+  .service-price-panel p,.price-panel-points span {font-size:16px;line-height:1.55}
+  .service-price-panel .section-kicker {font-size:14px;letter-spacing:1.8px}
+  .services-head .crumb {font-size:14px}
+  .services-head > .wrap > .section-kicker {font-size:15px;letter-spacing:1.8px}
+  .services-head h1 {font-size:39px;line-height:1.16}
+  .services-head p {font-size:17px;line-height:1.65}
+  .services-head-meta span {font-size:14px;line-height:1.4}
+}
+
+/* v15 — stronger typography and balanced About page layout */
+.about-head .crumb {
+  font-size: 17px;
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.about-head > .wrap > .section-kicker {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  margin-bottom: 12px;
+}
+.about-head h1 {
+  font-size: clamp(48px, 4.8vw, 68px);
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+  margin-bottom: 14px;
+}
+.about-head p {
+  max-width: 1040px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+.about-lead-copy .section-kicker,
+.about-section-title .section-kicker,
+.about-scope .section-kicker {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+.about-lead-copy h2 {
+  font-size: clamp(40px, 3.7vw, 54px);
+  line-height: 1.16;
+  letter-spacing: -1.2px;
+  margin: 8px 0 20px;
+}
+.about-lead-copy p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.about-lead-copy .btn {
+  font-size: 19px;
+  min-height: 66px;
+  padding: 21px 30px;
+  border-radius: 12px;
+}
+.about-section-title {
+  max-width: 1060px;
+  margin-bottom: 42px;
+}
+.about-section-title h2 {
+  font-size: clamp(42px, 3.8vw, 54px);
+  line-height: 1.15;
+  margin: 7px 0 14px;
+}
+.about-section-title p {
+  font-size: 21px;
+  line-height: 1.75;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.principle-card {
+  min-height: 270px;
+  padding: 30px 26px;
+}
+.principle-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 66px;
+  padding-right: 30px;
+  margin-bottom: 22px;
+}
+.principle-icon {
+  flex: 0 0 62px;
+  width: 62px;
+  height: 62px;
+  margin: 0;
+  font-size: 30px;
+}
+.principle-card h3 {
+  font-size: clamp(21px, 1.55vw, 25px);
+  line-height: 1.3;
+  margin: 0;
+}
+.principle-card p {
+  font-size: 18px;
+  line-height: 1.75;
+}
+.about-scope {
+  grid-template-columns: minmax(0,1.05fr) minmax(420px,.95fr);
+  gap: 42px;
+  padding: 42px 38px;
+}
+.about-scope h2 {
+  font-size: clamp(40px, 3.5vw, 50px);
+  line-height: 1.16;
+  margin: 8px 0 14px;
+}
+.about-scope > div > p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.about-scope aside {
+  padding: 34px 36px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-scope aside b {
+  font-size: 24px;
+  line-height: 1.35;
+}
+.about-scope aside p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 14px;
+}
+.about-bottom-cta {
+  min-height: 190px;
+  padding: 40px 44px;
+  gap: 36px;
+}
+.about-bottom-cta h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.about-bottom-cta p {
+  font-size: 19px;
+  line-height: 1.65;
+}
+.about-bottom-cta .btn {
+  font-size: 20px;
+  min-height: 70px;
+  padding: 22px 32px;
+}
+
+@media (max-width: 1000px) {
+  .about-scope {grid-template-columns:1fr;gap:26px}
+  .about-scope aside {min-height:0}
+  .principle-card {min-height:240px}
+}
+@media (max-width: 700px) {
+  .about-head .crumb {font-size:15px}
+  .about-head > .wrap > .section-kicker {font-size:15px;letter-spacing:1.8px}
+  .about-head h1 {font-size:40px;line-height:1.16}
+  .about-head p {font-size:18px;line-height:1.65}
+  .about-lead-copy h2 {font-size:34px}
+  .about-lead-copy p {font-size:17px;line-height:1.7}
+  .about-lead-copy .btn {width:100%;font-size:17px;min-height:60px}
+  .about-section-title .section-kicker,.about-scope .section-kicker {font-size:14px}
+  .about-section-title h2 {font-size:36px}
+  .about-section-title p {font-size:17px;line-height:1.65}
+  .principle-card {padding:24px 22px;min-height:0}
+  .principle-heading {gap:16px;margin-bottom:17px;padding-right:22px}
+  .principle-icon {flex-basis:54px;width:54px;height:54px;font-size:25px}
+  .principle-card h3 {font-size:21px}
+  .principle-card p {font-size:16px;line-height:1.65}
+  .about-scope {padding:25px 22px}
+  .about-scope h2 {font-size:34px}
+  .about-scope > div > p {font-size:17px;line-height:1.7}
+  .about-scope aside {padding:24px 22px}
+  .about-scope aside b {font-size:21px}
+  .about-scope aside p {font-size:16px;line-height:1.65}
+  .about-bottom-cta {padding:26px 22px;min-height:0;gap:20px}
+  .about-bottom-cta h2 {font-size:29px}
+  .about-bottom-cta p {font-size:17px}
+  .about-bottom-cta .btn {font-size:18px;min-height:60px}
+}
+
+
+/* v17 — unify interior page title scale with the homepage hero */
+.page-head h1,
+.services-head h1,
+.about-head h1,
+.faq-head h1,
+.contacts-head h1 {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin: 18px 0;
+}
+@media (max-width: 700px) {
+  .page-head h1,
+  .services-head h1,
+  .about-head h1,
+  .faq-head h1,
+  .contacts-head h1 {
+    font-size: clamp(36px, 7vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -1.2px;
+    margin: 14px 0;
+  }
+}
+
+
+/* =====================================================================
+   v18 — шрифти, іконки та анімації з v888.
+   Цей шар НЕ змінює розміри блоків і карток: тут лише шрифт, кольори,
+   тіні, transform та transition.
+   ===================================================================== */
+:root{--gold:#c9a86a;--red-g1:#d82c38;--red-g2:#b51b26;--ease:cubic-bezier(.22,.61,.36,1)}
+
+/* ---------- typography ---------- */
+body,button,input,select,textarea,.btn,.field input,.field select,.field textarea{
+  font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.hero h1 em{background:linear-gradient(180deg,#ff4651,#d0202c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.eyebrow,.section-kicker,.summary-kicker,.service-number,.feature-label{font-weight:800}
+
+/* ---------- SVG icons in existing containers (container sizes unchanged) ---------- */
+.si{width:52%;height:52%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
+.summary-icon .si,.faq-side-icon .si{width:56%;height:56%}
+.contact-cards .icon .si{width:50%;height:50%}
+.paper .icon,.principle-icon,.summary-icon,.faq-side-icon,.feature-icon{transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease),border-color .3s}
+.crest{font-size:0}
+.crest-svg{width:72%;height:72%;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.crest-svg .c-sh{stroke:var(--gold);stroke-width:1.9;fill:rgba(201,168,106,.06)}
+.crest-svg .c-sc{stroke:#e2c88f;stroke-width:1.7}
+
+/* ---------- header ---------- */
+.topbar{background:rgba(17,17,17,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:box-shadow .3s,background .3s}
+.topbar.scrolled{background:rgba(14,14,14,.94);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.links a{position:relative;transition:color .2s}
+.links a:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.links a:hover:after,.links a.active:after{transform:scaleX(1)}
+.brand .crest{transition:transform .4s var(--ease),border-color .3s}
+.brand:hover .crest{transform:rotate(-6deg) scale(1.05);border-color:var(--gold)}
+
+/* ---------- buttons ---------- */
+.btn{background-image:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.24) 50%,transparent 60%),linear-gradient(180deg,var(--red-g1),var(--red-g2));
+  background-size:260% 100%,100% 100%;background-position:130% 0,0 0;background-repeat:no-repeat;
+  box-shadow:0 8px 22px rgba(196,28,40,.28),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:transform .2s var(--ease),box-shadow .2s,background-position .7s var(--ease),border-color .2s}
+.btn:hover{background-image:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.24) 50%,transparent 60%),linear-gradient(180deg,#e0343f,#bd1f2a);
+  background-position:-40% 0,0 0;transform:translateY(-2px);box-shadow:0 14px 30px rgba(196,28,40,.38),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn:active{transform:translateY(0);box-shadow:0 6px 16px rgba(196,28,40,.3)}
+.btn.outline{background:transparent;background-image:none;box-shadow:none;border-color:rgba(255,255,255,.35)}
+.btn.outline:hover{background:rgba(255,255,255,.07);background-image:none;border-color:rgba(255,255,255,.6);box-shadow:none}
+.btn span.bt{display:inline!important;margin:0;padding:0;font:inherit;color:inherit;letter-spacing:inherit}
+.btn span.bt span.arr,.arr{display:inline-block;margin:0;font:inherit;color:inherit;transition:transform .25s var(--ease)}
+.btn:hover .arr,.more:hover .arr,.more:hover span{transform:translateX(4px)}
+.more span{display:inline-block;transition:transform .25s var(--ease)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ---------- cards: hover lift (size unchanged, only transform/shadow) ---------- */
+.home-service-card,.service-feature,.principle-card,.process-section .step,.steps .step,.contact-cards .card,.service-row,
+.faq details,.trust span,.sidebox,.about-bottom-cta,.service-price-panel{
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s,background .3s}
+.home-service-card:hover,.service-feature:hover,.principle-card:hover,.steps .step:hover,.contact-cards .card:hover,.service-row:hover{
+  transform:translateY(-5px);box-shadow:0 22px 48px rgba(40,28,16,.16);border-color:#dccfbe}
+.home-service-card:hover .icon,.principle-card:hover .principle-icon,.contact-cards .card:hover .icon{background:var(--red,#c51f2b);color:#fff;border-color:transparent;transform:scale(1.06)}
+.service-feature:hover .feature-icon{background:var(--red,#c51f2b);border-color:transparent;transform:scale(1.06)}
+.steps .step:hover .step-index{background:var(--red,#c51f2b);color:#fff}
+.step-index{transition:background .3s,color .3s}
+.trust span:hover{border-color:rgba(224,201,158,.5);background:rgba(18,17,16,.75);transform:translateY(-2px)}
+.service-feature-visual{transition:filter .5s var(--ease)}
+.service-feature:hover .service-feature-visual{filter:brightness(1.12)}
+
+/* ---------- FAQ ---------- */
+.faq summary:after{transition:transform .3s var(--ease),background .3s,color .3s}
+.faq details[open] summary:after{background:var(--red,#c51f2b);color:#fff;transform:translateY(-50%) rotate(180deg)}
+.faq details[open]{box-shadow:0 14px 36px rgba(40,28,16,.1)}
+.faq details[open] p{animation:faqIn .4s var(--ease)}
+@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- forms ---------- */
+.field input,.field select,.field textarea{transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#cf2531;box-shadow:0 0 0 4px rgba(207,37,49,.12)}
+.field.err input,.field.err select{border-color:#cf2531;background:#fff8f7}
+.success.show{display:block;animation:pop .5s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+
+/* ---------- hero entrance ---------- */
+.js .hero .eyebrow,.js .hero h1,.js .hero .lead,.js .hero-actions,.js .hero .trust,
+.js .page-head .crumb,.js .page-head h1,.js .page-head p,.js .page-head .section-kicker,.js .services-head-meta{
+  animation:heroIn .8s var(--ease) both}
+.js .hero h1,.js .page-head h1{animation-delay:.08s}
+.js .hero .lead,.js .page-head p{animation-delay:.16s}
+.js .hero-actions,.js .services-head-meta{animation-delay:.24s}
+.js .hero .trust{animation-delay:.32s}
+@keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* ---------- scroll reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- mobile menu & sticky CTA ---------- */
+.mobile-bar{display:none}
+@media(max-width:800px){
+  .links.open{animation:menuIn .3s var(--ease)}
+  .links a:after{display:none}
+  .mobile-toggle{transition:background .2s,border-color .2s}
+  .mobile-toggle[aria-expanded="true"]{background:rgba(255,255,255,.08);border-color:var(--gold)}
+  .mobile-bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:14px;
+    background:linear-gradient(180deg,var(--red-g1),var(--red-g2));color:#fff;font-weight:800;font-size:16px;box-shadow:0 12px 30px rgba(0,0,0,.4);transform:translateY(140%);transition:transform .35s var(--ease)}
+  .mobile-bar .si{width:20px;height:20px}
+  .mobile-bar.show{transform:none}
+  body{padding-bottom:84px}
+}
+@keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none}
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+
+/* Header price + booking action */
+.nav-actions{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.nav-price{font-size:18px;font-weight:800;color:#f5eee4;white-space:nowrap;line-height:1.15}
+.nav-price small{display:block;font-size:10px;font-weight:600;color:#c5b8a6;letter-spacing:.2px;margin-top:3px;text-align:right}
+.nav-actions .btn{white-space:nowrap}
+
+/* More coherent, relevant photo direction across secondary pages */
+.services-head{background:linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.83) 48%,rgba(13,13,13,.38) 100%),url('assets/hero-legal-office.jpg') center 48%/cover}
+.service-feature.reservation-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.18)),url('assets/booking-office.jpg') center/cover}
+.service-feature.disability-feature .service-feature-visual{background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.18)),url('assets/hero-consultation.jpg') center 46%/cover}
+.about-head{background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.54)),url('assets/hero-legal-office.jpg') center 52%/cover}
+.about-photo{background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.02)),url('assets/booking-office.jpg') center/cover}
+.faq-head{background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.58)),url('assets/hero-consultation.jpg') center 48%/cover}
+
+/* Contacts page: stronger type and CTA positioned in the open right area */
+.contacts-head .crumb,.faq-head .crumb,.about-head .crumb,.services-head .crumb{font-size:15px}
+.contacts-head .section-kicker,.faq-head .section-kicker,.about-head .section-kicker{font-size:14px;letter-spacing:1.8px}
+.contacts-head h1,.faq-head h1,.about-head h1{font-size:clamp(42px,4.5vw,58px);line-height:1.12}
+.contacts-head p,.faq-head p,.about-head p{font-size:19px;line-height:1.7;max-width:850px}
+.contacts-photo-panel{justify-content:space-between;gap:34px;padding:44px 52px;background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.74),rgba(15,15,15,.35)),url('assets/hero-legal-office.jpg') center 53%/cover}
+.contacts-photo-copy{max-width:650px}
+.contacts-photo-panel .section-kicker{font-size:13px;letter-spacing:1.7px}
+.contacts-photo-panel h2{font-size:clamp(38px,3.8vw,52px)}
+.contacts-photo-panel p{font-size:19px;max-width:650px}
+.contacts-photo-cta{flex:0 0 auto;min-width:300px;min-height:58px;font-size:16px;padding:17px 24px}
+
+/* FAQ intro hierarchy and side-card copy moved to the previously empty upper-right space */
+.faq-intro>.section-kicker{font-size:14px;letter-spacing:1.8px}
+.faq-intro h2{font-size:clamp(36px,3.4vw,48px);line-height:1.18}
+.faq-intro>p{font-size:19px;line-height:1.75}
+.faq-side-card{display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:22px;row-gap:20px;align-items:start;padding:28px 26px}
+.faq-side-icon{grid-column:1;grid-row:1;margin:0;width:54px;height:54px}
+.faq-side-copy{grid-column:2;grid-row:1;align-self:center;min-height:90px;display:flex;flex-direction:column;justify-content:center}
+.faq-side-card b{font-size:22px;line-height:1.3}
+.faq-side-card span{font-size:17px;line-height:1.65;margin:9px 0 0}
+.faq-side-card .btn{grid-column:1 / -1;width:100%;font-size:17px;min-height:54px}
+
+/* Consistent scale for the secondary-page section labels and prominent headings */
+.services-head .section-kicker{font-size:14px;letter-spacing:1.8px}
+.services-head h1{font-size:clamp(46px,5.2vw,66px)}
+.services-head p{font-size:20px}
+.about-lead-copy .section-kicker,.about-section-title .section-kicker{font-size:14px;letter-spacing:1.8px}
+.about-lead-copy h2,.about-section-title h2{font-size:clamp(38px,3.6vw,50px)}
+.about-lead-copy p,.about-section-title p{font-size:19px;line-height:1.75}
+
+@media(max-width:900px){
+  .nav-actions{gap:10px}
+  .nav-price{font-size:15px}
+  .nav-price small{font-size:9px}
+  .contacts-photo-panel{align-items:flex-start;flex-direction:column}
+  .contacts-photo-cta{min-width:0;width:100%}
+}
+@media(max-width:620px){
+  .nav-actions{gap:8px}
+  .nav-price{font-size:13px}
+  .nav-price small{font-size:8px}
+  .nav-actions .btn{padding:11px 12px;font-size:12px}
+  .contacts-head h1,.faq-head h1,.about-head h1{font-size:38px}
+  .contacts-head p,.faq-head p,.about-head p{font-size:17px}
+  .contacts-photo-panel{padding:30px 24px}
+  .faq-side-card{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:22px 18px}
+  .faq-side-icon{width:44px;height:44px}
+  .faq-side-copy{min-height:82px}
+  .faq-side-card b{font-size:18px}
+  .faq-side-card span{font-size:15px}
+}
+
+
+/* v19: unique, coordinated photographic direction across pages */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(12,12,12,.96) 0%,rgba(12,12,12,.84) 40%,rgba(12,12,12,.16) 100%),
+    url('assets/home-hero-new.jpg') center 42%/cover no-repeat;
+}
+.services-head{
+  background:linear-gradient(90deg,rgba(13,13,13,.95) 0%,rgba(13,13,13,.78) 48%,rgba(13,13,13,.28) 100%),
+    url('assets/services-header-new.jpg') center 52%/cover no-repeat;
+}
+.service-feature.reservation-feature .service-feature-visual{
+  background:linear-gradient(110deg,rgba(18,17,16,.78),rgba(18,17,16,.12)),
+    url('assets/services-reservation-new.jpg') center 54%/cover no-repeat;
+}
+.service-feature.disability-feature .service-feature-visual{
+  background:linear-gradient(110deg,rgba(18,17,16,.8),rgba(18,17,16,.12)),
+    url('assets/services-disability-new.jpg') center 50%/cover no-repeat;
+}
+/* The circled photo on the About page is intentionally preserved. */
+.about-head{
+  background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.58)),
+    url('assets/about-header-new.jpg') center 48%/cover no-repeat;
+}
+.faq-head{
+  background:linear-gradient(90deg,rgba(15,15,15,.95),rgba(15,15,15,.62)),
+    url('assets/faq-header-new.jpg') center 48%/cover no-repeat;
+}
+.contacts-head{
+  background:radial-gradient(circle at 78% 45%,rgba(89,65,43,.34),transparent 34%),
+    linear-gradient(110deg,#171615,#211e1b 65%,#151515);
+}
+.contacts-photo-panel{
+  background:linear-gradient(90deg,rgba(15,15,15,.94),rgba(15,15,15,.76),rgba(15,15,15,.30)),
+    url('assets/hero-legal-office.jpg') center 53%/cover no-repeat;
+}
+/* Price is visible on every booking button, including compact header buttons. */
+.nav-actions .btn{white-space:nowrap}
+@media(max-width:800px){
+  .hero{background-position:58% center}
+  .services-head,.about-head,.faq-head{background-position:58% center}
+}
+
+
+/* v20 — contacts page: distinct new photography and a cleaner booking header */
+.nav-price{display:none!important}
+.contacts-head{
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.84) 43%,rgba(13,13,13,.20) 100%),
+    url('assets/contacts-header-new.jpg') center 53%/cover no-repeat;
+}
+.contacts-head .wrap{position:relative;z-index:1}
+.contacts-photo-panel{
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.92) 0%,rgba(13,13,13,.72) 42%,rgba(13,13,13,.12) 100%),
+    url('assets/contacts-cta-new.jpg') center 52%/cover no-repeat;
+}
+@media(max-width:800px){
+  .contacts-head{background-position:62% center}
+  .contacts-photo-panel{background-position:58% center}
+}
+
+/* Homepage bottom CTA: fresh photographic background, distinct from the contacts imagery. */
+.cta{
+  background-image:
+    linear-gradient(90deg,rgba(18,18,18,.18) 0%,rgba(18,18,18,.62) 38%,rgba(18,18,18,.96) 66%,#151515 100%),
+    url('assets/home-cta-new.jpg');
+  background-size:cover;
+  background-position:center 48%;
+}
+
+
+/* v891 refresh: unique Ukrainian military/legal photography on every page except Contacts.
+   The circled About-page feature photo and all Contacts photography remain unchanged. */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(12,12,12,.96) 0%,rgba(12,12,12,.82) 40%,rgba(12,12,12,.14) 100%),
+    url('assets/war-uniform.jpg') center 48%/cover no-repeat;
+}
+.priceband{
+  background-image:
+    linear-gradient(90deg,#171717 0%,rgba(23,23,23,.96) 40%,rgba(23,23,23,.22) 100%),
+    url('assets/reservation-documents.jpg');
+  background-size:cover;background-position:center 54%;
+}
+.cta{
+  background-image:
+    linear-gradient(90deg,rgba(18,18,18,.16) 0%,rgba(18,18,18,.62) 38%,rgba(18,18,18,.96) 68%,#151515 100%),
+    url('assets/about-office.jpg');
+  background-size:cover;background-position:center 52%;
+}
+.services-head{
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.96) 0%,rgba(13,13,13,.82) 48%,rgba(13,13,13,.24) 100%),
+    url('assets/services-header-war.jpg') center 50%/cover no-repeat;
+}
+.service-feature.reservation-feature .service-feature-visual{
+  background:
+    linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.14)),
+    url('assets/service-reservation-armor.jpg') center 48%/cover no-repeat;
+}
+.service-feature.disability-feature .service-feature-visual{
+  background:
+    linear-gradient(110deg,rgba(18,17,16,.84),rgba(18,17,16,.16)),
+    url('assets/disability-medical.jpg') center 48%/cover no-repeat;
+}
+.about-head{
+  background:
+    linear-gradient(90deg,rgba(15,15,15,.95),rgba(15,15,15,.58)),
+    url('assets/about-header-war.jpg') center 50%/cover no-repeat;
+}
+/* Keep the previously approved/circled About-page photo unchanged. */
+.faq-head{
+  background:
+    linear-gradient(90deg,rgba(15,15,15,.96),rgba(15,15,15,.62)),
+    url('assets/faq-header-war.jpg') center 50%/cover no-repeat;
+}
+@media(max-width:800px){
+  .hero{background-position:58% center}
+  .services-head,.about-head,.faq-head{background-position:58% center}
+}
+
+/* v893 — FAQ: new, unique military/legal banner and larger highlighted copy */
+.faq-head{
+  background:
+    linear-gradient(90deg,rgba(13,13,13,.95) 0%,rgba(13,13,13,.78) 43%,rgba(13,13,13,.30) 100%),
+    url('assets/faq-header-new-war.webp') center 48%/cover no-repeat;
+}
+.faq-head .crumb{font-size:18px;line-height:1.6;margin-bottom:18px}
+.faq-head .section-kicker{font-size:17px;letter-spacing:2px}
+.faq-intro>.section-kicker{font-size:17px;letter-spacing:2px}
+.faq-side-card b{font-size:25px;line-height:1.35}
+.faq-side-card span{font-size:19px;line-height:1.7}
+@media(max-width:620px){
+  .faq-head .crumb{font-size:16px}
+  .faq-head .section-kicker,.faq-intro>.section-kicker{font-size:15px}
+  .faq-side-card b{font-size:20px}
+  .faq-side-card span{font-size:17px}
+}
+
+
+/* v894 — збільшено саме текст, позначений на сторінці «Послуги» */
+.services-head .crumb{
+  font-size:18px;
+  line-height:1.65;
+  margin-bottom:18px;
+}
+.services-head > .wrap > .section-kicker{
+  display:inline-block;
+  font-size:19px;
+  line-height:1.4;
+  letter-spacing:2.2px;
+  margin-bottom:12px;
+}
+.services-intro > div > .section-kicker{
+  display:inline-block;
+  font-size:19px;
+  line-height:1.4;
+  letter-spacing:2.2px;
+  margin-bottom:8px;
+}
+.services-intro h2{
+  font-size:clamp(46px,4.1vw,58px);
+  line-height:1.15;
+  letter-spacing:-1.1px;
+}
+@media(max-width:620px){
+  .services-head .crumb{font-size:16px}
+  .services-head > .wrap > .section-kicker,
+  .services-intro > div > .section-kicker{font-size:16px;letter-spacing:1.6px}
+  .services-intro h2{font-size:36px;line-height:1.2}
+}
+
+
+/* v895 — збільшено підкреслені написи лише на сторінці «Контакти» */
+.contacts-head .crumb{
+  font-size:21px !important;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+.contacts-head > .wrap > .section-kicker{
+  display:inline-block;
+  font-size:21px !important;
+  line-height:1.5;
+  letter-spacing:2.2px;
+  margin-bottom:14px;
+}
+@media(max-width:620px){
+  .contacts-head .crumb{font-size:18px !important}
+  .contacts-head > .wrap > .section-kicker{
+    font-size:18px !important;
+    letter-spacing:1.8px;
+  }
+}
+
+/* v896: larger About page breadcrumb and section label */
+.about-head .crumb{
+  font-size:21px !important;
+  line-height:1.65;
+  margin-bottom:22px;
+}
+.about-head > .wrap > .section-kicker{
+  display:inline-block;
+  font-size:23px !important;
+  line-height:1.5;
+  letter-spacing:2.1px;
+  margin-bottom:16px;
+}
+@media(max-width:800px){
+  .about-head .crumb{font-size:18px !important}
+  .about-head > .wrap > .section-kicker{font-size:20px !important}
+}
+
+
+/* v897 — replace remaining non-Contacts generic photography with distinct Ukrainian military imagery.
+   Previously approved patriotic imagery on Services and the Contacts page is intentionally untouched. */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(12,12,12,.96) 0%,rgba(12,12,12,.82) 40%,rgba(12,12,12,.14) 100%),
+    url('assets/user-war-closeup.jpg') center 48%/cover no-repeat;
+}
+.priceband{
+  background-image:
+    linear-gradient(90deg,#171717 0%,rgba(23,23,23,.93) 40%,rgba(23,23,23,.18) 100%),
+    url('assets/user-ukrainian-soldiers.jpg');
+  background-size:cover;background-position:center 52%;
+}
+.cta{
+  background-image:
+    linear-gradient(90deg,rgba(18,18,18,.16) 0%,rgba(18,18,18,.62) 38%,rgba(18,18,18,.94) 68%,#151515 100%),
+    url('assets/user-soldier-back.jpg');
+  background-size:cover;background-position:center 52%;
+}
+.about-photo{
+  background:
+    linear-gradient(0deg,rgba(0,0,0,.16),rgba(0,0,0,.03)),
+    url('assets/generated-field-documents.jpg') center 48%/cover no-repeat;
+}
+
+/* v19: єдині розміри заголовків і підзаголовків — як на головній */
+:root{
+  --t-h1:clamp(48px,5.25vw,82px);--t-lead:27px;
+  --t-kicker:19px;--t-h2:clamp(34px,3.5vw,46px);--t-intro:24px;
+  --t-h3:clamp(27px,2.15vw,32px);--t-crumb:16px;
+}
+@media (max-width:1000px){:root{--t-h1:48px;--t-lead:22px;--t-kicker:16px;--t-h2:34px;--t-intro:20px;--t-h3:27px}}
+@media (max-width:700px){:root{--t-h1:40px;--t-lead:18px;--t-kicker:14px;--t-h2:34px;--t-intro:17px;--t-h3:25px;--t-crumb:14px}}
+
+/* шапки внутрішніх сторінок = hero головної */
+.page-head h1,.services-head h1,.about-head h1,.faq-head h1,.contacts-head h1,.booking-head h1{font-size:var(--t-h1)!important;line-height:1.08!important}
+.page-head p,.services-head p,.about-head p,.faq-head p,.contacts-head p,.booking-head p{font-size:var(--t-lead)!important;line-height:1.65!important}
+.page-head .section-kicker,.page-head .wrap>.section-kicker{font-size:var(--t-kicker)!important;letter-spacing:2.4px!important}
+.page-head .crumb{font-size:var(--t-crumb)!important}
+
+/* підзаголовки секцій (h2) = «Як проходить консультація?» */
+.services-intro h2,.about-lead-copy h2,.about-section-title h2,.about-scope h2,.about-bottom-cta h2,
+.faq-intro h2,.contacts-photo-panel h2,.prose h2{font-size:var(--t-h2)!important;line-height:1.16!important}
+.prose h3{font-size:var(--t-h3)!important;line-height:1.28!important}
+
+/* мітки над заголовками */
+.services-intro .section-kicker,.about-lead-copy .section-kicker,.about-section-title .section-kicker,.about-scope .section-kicker,
+.faq-intro>.section-kicker,.contacts-photo-panel .section-kicker,.service-price-panel .section-kicker{font-size:var(--t-kicker)!important;letter-spacing:2.4px!important}
+
+/* тексти під підзаголовками */
+.services-intro>p,.about-lead-copy p,.about-section-title p,.about-scope>div>p,.faq-intro>p,.contacts-photo-panel p{font-size:var(--t-intro)!important;line-height:1.7!important}
+
+/* заголовки карток (h3) = картки послуг на головній */
+.service-feature h3,.principle-card h3,.contact-cards .card h3,.contacts-content .contact-cards .card h3,.sidebox h3,.booking-summary h3{font-size:var(--t-h3)!important;line-height:1.25!important}
+
+/* v20: картки переваг на сторінці «Послуги», текст у блоці ціни, світліші написи в CTA */
+.services-head .services-trust{margin-top:34px}
+.services-head .services-trust span small{font-size:14px!important;line-height:1.55!important}
+.priceband{display:flex;align-items:center;justify-content:space-between;gap:26px}
+.priceband>p.priceband-note{margin:0 auto;font-size:18px;line-height:1.7;color:#fff;font-weight:600;text-align:center;text-shadow:0 2px 10px rgba(0,0,0,.75)}
+.cta .cta-copy>p{color:#f6f1ea!important;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+.cta .cta-price small{color:#f1e6d6!important;font-size:15px;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+@media (max-width:800px){
+  .priceband{flex-direction:column;align-items:flex-start}
+  .priceband>p.priceband-note{margin:0;text-align:left;font-size:16px}
+}
+/* v20: на телефоні шапка не ширша за екран (кнопка запису є знизу екрана) */
+@media (max-width:560px){
+  .nav-actions{display:none}
+  .nav{gap:10px}
+}
+@media (max-width:700px){
+  .service-price-panel,.service-price-panel>div{min-width:0}
+  .service-price-panel .btn,.service-price-panel .btn .bt{white-space:normal;text-align:center;width:100%;max-width:100%}
+  .services-head .services-trust{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services-head .services-trust span{min-width:0}
+}
+@media (max-width:700px){.service-price-panel h2 small{display:block;margin-top:4px}}
+
+/* v21: великий футер */
+.footer{padding:70px 0 44px!important;border-top:1px solid rgba(216,185,120,.18);background:radial-gradient(circle at 15% 0,rgba(190,27,39,.12),transparent 40%),#101010!important}
+.footer-big{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.footer-brand strong{display:block;font-size:clamp(40px,5.2vw,76px)!important;line-height:1;font-weight:900;letter-spacing:-1px;color:#f8f3ec}
+.footer-sub{display:block;margin-top:12px;font-size:clamp(16px,1.4vw,21px);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#d8b978}
+.footer-brand p{margin:18px 0 0;max-width:720px;font-size:clamp(17px,1.4vw,21px);line-height:1.6;color:#c9c0b4}
+.footer-copy{font-size:16px;color:#9d948a}
+@media (max-width:700px){.footer{padding:50px 0 34px!important}.footer-sub{letter-spacing:1.6px}}
+
+/* v21: плашки-переваги в блоці ціни */
+.price-perks{display:flex;gap:14px;margin:0 auto}
+.price-perks span{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center;padding:14px 18px 14px 14px;border-radius:16px;
+  background:rgba(16,15,14,.55);border:1px solid rgba(216,185,120,.32);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .25s,border-color .25s}
+.price-perks span:hover{transform:translateY(-3px);border-color:rgba(229,44,54,.7)}
+.price-perks i{grid-row:1/3;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(180deg,#e0323d,#b51d29);box-shadow:0 6px 16px rgba(190,27,39,.45)}
+.price-perks svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.price-perks b{font-size:17px;line-height:1.2;color:#fff;white-space:nowrap}
+.price-perks small{font-size:13px;line-height:1.3;color:#d9cfc2;margin-top:3px;white-space:nowrap}
+@media (max-width:1200px){.price-perks span:last-child{display:none}}
+@media (max-width:1000px){.price-perks span:last-child{display:grid}.price-perks{flex-wrap:wrap;margin:0}}
+@media (max-width:700px){.price-perks{flex-direction:column;width:100%}.price-perks span{width:100%}}
+.footer-brand strong{font-size:clamp(30px,5.2vw,76px)!important}@media (max-width:420px){.footer-brand strong{font-size:8vw!important;letter-spacing:-.5px}}
+.priceband>div:first-child p{white-space:nowrap}
+@media (max-width:700px){.priceband{align-items:stretch}.priceband .btn{width:100%;max-width:100%;justify-content:center;text-align:center;padding-left:16px;padding-right:16px}.priceband>div:first-child p{white-space:normal}}
+@media (max-width:1250px) and (min-width:701px){
+  .priceband{flex-wrap:wrap;flex-direction:row!important;align-items:center}
+  .price-perks{order:3;flex:1 1 100%;margin:0;flex-wrap:wrap}
+  .price-perks span:last-child{display:grid}
+  .price-perks span{flex:1 1 200px}
+}
+
+/* v22: картки переваг однакові на головній і на «Послугах» (на будь-якій ширині) */
+.hero .trust,.services-head .trust{width:100%!important;max-width:none!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;margin-top:38px!important}
+.hero .trust span,.services-head .trust span{display:block!important;position:relative!important;min-height:0!important;padding:20px 22px 20px!important;border-radius:16px!important;font-size:16px!important;text-align:left!important}
+.hero .trust span:before,.services-head .trust span:before{position:static!important;display:grid!important;place-items:center;width:26px!important;height:26px!important;margin:0 0 14px!important;font-size:14px!important}
+.hero .trust span b,.services-head .trust span b{display:block!important;font-size:20px!important;line-height:1.3!important;margin:0 0 6px!important}
+.hero .trust span small,.services-head .trust span small{display:block!important;font-size:14px!important;line-height:1.55!important;margin:0!important}
+@media (max-width:1000px){.hero .trust,.services-head .trust{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:700px){
+  .hero .trust,.services-head .trust{gap:10px!important;margin-top:28px!important}
+  .hero .trust span,.services-head .trust span{padding:14px 14px 15px!important}
+  .hero .trust span:before,.services-head .trust span:before{width:22px!important;height:22px!important;margin-bottom:10px!important;font-size:12px!important}
+  .hero .trust span b,.services-head .trust span b{font-size:16px!important}
+  .hero .trust span small,.services-head .trust span small{font-size:13px!important}
+}
+
+/* v22: блок «Єдина вартість» — «за консультацію» під ціною, без накладання */
+.service-price-panel{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;align-items:center!important;gap:28px 56px!important}
+.service-price-panel h2{display:flex!important;flex-direction:column;align-items:flex-start;gap:6px;margin:10px 0 0!important;line-height:1!important;white-space:nowrap}
+.service-price-panel h2 small{display:block!important;margin:0!important;font-size:17px!important;font-weight:600!important;letter-spacing:.3px;color:#d9cfc2!important;line-height:1.3!important}
+.service-price-panel .price-panel-points{display:flex!important;flex-direction:column;gap:12px!important;padding-left:40px;border-left:1px solid rgba(216,185,120,.22)}
+.service-price-panel .price-panel-points span{font-size:17px!important;line-height:1.45!important}
+@media (max-width:1000px){
+  .service-price-panel{grid-template-columns:1fr!important;gap:24px!important}
+  .service-price-panel .price-panel-points{padding-left:0;border-left:0;padding-top:20px;border-top:1px solid rgba(216,185,120,.22)}
+  .service-price-panel h2{white-space:normal}
+}
+
+/* v22: «Почнімо з розмови» — велика преміальна кнопка */
+.contacts-photo-panel .contacts-photo-cta{min-height:84px!important;padding:0 46px!important;font-size:21px!important;font-weight:800!important;border-radius:18px!important;letter-spacing:.2px;
+  box-shadow:0 18px 40px rgba(190,27,39,.42),inset 0 1px 0 rgba(255,255,255,.22)!important;flex-shrink:0}
+.contacts-photo-panel .contacts-photo-cta .arr{margin-left:10px;transition:transform .25s}
+.contacts-photo-panel .contacts-photo-cta:hover .arr{transform:translateX(5px)}
+@media (max-width:1000px){.contacts-photo-panel .contacts-photo-cta{min-height:72px!important;padding:0 28px!important;font-size:19px!important}}
+@media (max-width:700px){.contacts-photo-panel .contacts-photo-cta{width:100%;min-height:64px!important;padding:0 16px!important;font-size:17px!important;white-space:normal;text-align:center;justify-content:center}}
+.contacts-photo-panel .contacts-photo-cta .bt{font-size:inherit!important;font-weight:inherit!important}
+@media (min-width:1001px){.contacts-photo-panel{min-height:330px}}
+@media (min-width:1001px){.contacts-photo-panel .contacts-photo-cta{min-height:92px!important;padding:0 54px!important;font-size:23px!important}}
+
+/* v23: картки на головній — та сама ширина, що й на «Послугах» */
+.hero .trust span,.services-head .trust span{min-height:150px!important}
+@media (max-width:1000px){.hero .trust span,.services-head .trust span{min-height:0!important}}
+
+/* v23: «Єдина вартість» — більший текст пунктів */
+.service-price-panel .price-panel-points{gap:16px!important;padding-left:48px}
+.service-price-panel .price-panel-points span{font-size:23px!important;line-height:1.4!important;font-weight:500;color:#f5efe7}
+@media (max-width:1300px) and (min-width:1001px){.service-price-panel .price-panel-points span{font-size:19px!important}}
+@media (max-width:700px){.service-price-panel .price-panel-points span{font-size:18px!important}}
+/* ширина карток на головній = ширина контейнера сторінки (батьківський блок обмежений 91%) */
+.hero .trust{width:var(--trust-w,100%)!important;max-width:none!important}
+@media (max-width:1450px) and (min-width:1001px){
+  .service-price-panel{grid-template-columns:auto minmax(0,1fr)!important}
+  .service-price-panel>.btn{grid-column:1/-1;justify-self:stretch;justify-content:center}
+}
+@media (max-width:1000px) and (min-width:561px){.nav-actions .btn{padding-left:16px!important;padding-right:16px!important;font-size:14px!important;min-height:46px}.nav-actions{gap:8px}}
