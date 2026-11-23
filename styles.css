@@ -2286,3 +2286,39 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   .disability-feature .service-feature-visual:not(#_){background:linear-gradient(110deg,rgba(18,17,16,.82),rgba(18,17,16,.14)),url('assets/hq/disability-medical-m.webp') center 48%/cover no-repeat!important}
   .booking-content:not(#_){background:radial-gradient(circle at 50% 0,rgba(190,27,39,.10),transparent 55%),#121110!important}
 }
+
+/* ===== v28: фото на телефоні — чітка смуга вгорі блоку, наведена на головний об'єкт ===== */
+@media (max-width:700px){
+  /* головна: шеврон і шолом */
+  .hero:not(#_){background:
+      linear-gradient(180deg,rgba(12,11,10,.10) 0,rgba(12,11,10,.18) 150px,rgba(14,13,12,.78) 280px,#100f0e 340px),
+      url('assets/hq/user-war-closeup-m.webp') 74% 0/auto 340px no-repeat,#100f0e!important}
+  .hero .hero-grid:not(#_){padding-top:200px!important}
+
+  /* «Послуги»: рюкзак і стіл */
+  .services-head:not(#_){background:
+      linear-gradient(180deg,rgba(12,11,10,.12) 0,rgba(12,11,10,.22) 140px,rgba(14,13,12,.8) 260px,#100f0e 320px),
+      url('assets/hq/services-reservation-new-m.webp') 78% 0/auto 320px no-repeat,#100f0e!important}
+  .services-head .wrap:not(#_){padding-top:170px!important}
+
+  /* блок з ціною: бійці на всю ширину */
+  .priceband:not(#_){background:
+      linear-gradient(180deg,rgba(14,13,12,0) 0,rgba(14,13,12,.15) 110px,rgba(26,24,22,.92) 200px,#1a1816 225px),
+      url('assets/hq/user-ukrainian-soldiers-m.webp') 50% 0/auto 225px no-repeat,#1a1816!important;
+    padding-top:205px!important}
+
+  /* «Маєте запитання?»: шолом у тумані, без сірого затемнення */
+  .cta:not(#_){background:
+      linear-gradient(180deg,rgba(14,13,12,0) 0,rgba(14,13,12,.08) 120px,rgba(23,21,19,.9) 215px,#171513 240px),
+      url('assets/hq/user-soldier-back-m.webp') 47% 42%/auto 300px no-repeat,#171513!important;
+    padding-top:215px!important;background-position:0 0,47% -30px!important}
+  .cta:not(#_):before{display:none!important}
+
+  /* шапки сторінок: фокус на предметі, легше затемнення */
+  .about-head:not(#_){background:linear-gradient(180deg,rgba(12,11,10,.35),rgba(12,11,10,.72)),url('assets/hq/about-header-war-m.webp') 66% 50%/cover no-repeat!important}
+  .faq-head:not(#_){background:linear-gradient(180deg,rgba(12,11,10,.38),rgba(12,11,10,.74)),url('assets/hq/faq-header-new-war-m.webp') 70% 50%/cover no-repeat!important}
+  .contacts-head:not(#_){background:linear-gradient(180deg,rgba(12,11,10,.38),rgba(12,11,10,.74)),url('assets/hq/contacts-header-new-m.webp') 78% 50%/cover no-repeat!important}
+  .booking-head:not(#_){background:linear-gradient(180deg,rgba(12,11,10,.4),rgba(12,11,10,.76)),url('assets/hq/booking-office-m.webp') 80% 45%/cover no-repeat!important}
+  .contacts-photo-panel:not(#_){background:linear-gradient(180deg,rgba(14,13,12,.45),rgba(14,13,12,.8)),url('assets/hq/contacts-cta-new-m.webp') 68% 60%/cover no-repeat!important}
+  .about-photo:not(#_){background:url('assets/hq/booking-office-m.webp') 78% 45%/cover no-repeat!important}
+}
