@@ -2107,3 +2107,119 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   .service-price-panel>.btn{grid-column:1/-1;justify-self:stretch;justify-content:center}
 }
 @media (max-width:1000px) and (min-width:561px){.nav-actions .btn{padding-left:16px!important;padding-right:16px!important;font-size:14px!important;min-height:46px}.nav-actions{gap:8px}}
+
+/* ================= v24: мобільна версія — єдина система тексту ================= */
+@media (max-width:700px){
+  :root{--m-body:16px;--m-lh:1.6;--m-ink:#5b544c;--m-ink-dark:#d9d2c8}
+  body{-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+
+  /* підзаголовок під H1 */
+  .hero .lead,.page-head p,.services-head p,.about-head p,.faq-head p,.contacts-head p,.booking-head p{font-size:17px!important;line-height:1.55!important}
+
+  /* заголовки */
+  main h2,section h2,.cta h2{font-size:30px!important;line-height:1.15!important;letter-spacing:-.3px}
+  .service-price-panel h2{font-size:44px!important;line-height:1!important}
+  main h3,section h3{font-size:21px!important;line-height:1.25!important}
+  .section-kicker{font-size:13px!important;letter-spacing:2px!important}
+
+  /* основний текст: однаковий розмір і інтервал */
+  main p,section p,.section-intro,main li,.step small,.prose p,.prose li,details p,.sidebox p,.card p,.service-points li,.price-panel-points span{
+    font-size:var(--m-body)!important;line-height:var(--m-lh)!important}
+  .section-intro{max-width:34ch;margin-left:auto;margin-right:auto}
+  .help-intro .section-intro,.section-heading .section-intro{max-width:none}
+  .prose h2{margin-top:34px!important;margin-bottom:12px!important}
+  .prose p{margin:0 0 14px!important}
+  .prose li,.service-points li,main ul li{margin-bottom:8px!important}
+
+  /* кольори тексту: на світлому фоні та на темному */
+  .card p,.services-intro p,.about-lead-copy p,.about-section-title p,.principle-card p,.faq-intro p,details p,.service-feature-body p,.step small,.help-intro .section-intro,.contact-cards .card p{color:var(--m-ink)!important}
+  .prose p,.prose li,.sidebox p,.cta-copy>p,.section-heading .section-intro{color:var(--m-ink-dark)!important}
+
+  /* картки: менші внутрішні відступи */
+  .card,.home-service-card,.service-feature-body,.principle-card,.step,.sidebox,.faq details,.contact-cards .card{padding:22px 20px!important}
+  .step{gap:12px!important}
+  .step b,.step h3{margin-bottom:6px!important}
+
+  /* кнопки: акуратні, текст не рветься на «2 / 500» */
+  main .btn,section .btn,.cta .btn{min-height:56px!important;padding:14px 18px!important;font-size:16px!important;line-height:1.3!important;
+    white-space:normal!important;text-align:center!important;justify-content:center!important;border-radius:14px!important}
+  main .btn .bt,section .btn .bt,.cta .btn .bt{font-size:inherit!important;display:inline!important}
+  main .btn .arr,section .btn .arr{display:inline-block;margin-left:6px}
+  .hero-actions{display:grid!important;grid-template-columns:1fr;gap:10px!important}
+  .hero-actions .btn{width:100%}
+  .cta .btn,.cta-button,.about-lead-copy .btn,.service-price-panel .btn,.sidebox .btn,.about-bottom-cta .btn,.faq-side-card .btn{width:100%!important}
+  .contacts-photo-panel .contacts-photo-cta{min-height:58px!important;font-size:16px!important;padding:14px 18px!important}
+
+  /* «Маєте запитання?» */
+  .cta-price small{font-size:14px!important}
+  .cta-price strong{font-size:40px!important}
+
+  /* картки переваг: охайні рядки з іконкою зліва */
+  .hero .trust,.services-head .trust{grid-template-columns:1fr!important;gap:8px!important}
+  .hero .trust span,.services-head .trust span{display:grid!important;grid-template-columns:28px 1fr;column-gap:14px;align-items:start;padding:14px 16px!important}
+  .hero .trust span:before,.services-head .trust span:before{grid-row:1/3;margin:2px 0 0!important;width:26px!important;height:26px!important}
+  .hero .trust span b,.services-head .trust span b{font-size:16px!important;margin:0 0 2px!important}
+  .hero .trust span small,.services-head .trust span small{font-size:14px!important;line-height:1.45!important}
+}
+@media (max-width:380px){
+  main h2,section h2,.cta h2{font-size:27px!important}
+  .hero h1,.page-head h1{font-size:36px!important}
+}
+
+/* v24b: посилені мобільні правила (перебивають старі специфічні стилі) */
+@media (max-width:700px){
+  html body .hero h1,html body .page-head h1{font-size:38px!important;line-height:1.08!important;letter-spacing:-1px!important}
+  html body main h2,html body section h2:not(.service-price-panel h2),html body .cta h2,html body .prose h2{font-size:30px!important;line-height:1.15!important;letter-spacing:-.5px!important}
+  html body main h3,html body section h3,html body .step b,html body details summary{font-size:20px!important;line-height:1.28!important}
+  html body details summary{font-size:16.5px!important;line-height:1.4!important}
+
+  html body main p,html body section p,html body .section-intro,html body main li,html body .prose p,html body .prose li,
+  html body details p,html body .sidebox p,html body .card p,html body .about-lead-copy p,html body .about-section-title p,
+  html body .principle-card p,html body .faq-intro p,html body .services-intro p,html body .contacts-photo-copy p,html body .cta-copy>p{
+    font-size:16px!important;line-height:1.6!important}
+  html body .page-head p,html body .hero .lead{font-size:17px!important;line-height:1.55!important}
+  html body .step small{display:block!important;font-size:16px!important;line-height:1.6!important;color:#5b544c!important}
+  html body main li,html body .prose li{margin:0 0 6px!important}
+  html body .service-points,html body main ul{margin-top:14px!important}
+
+  /* кроки «Як проходить консультація» */
+  html body .step{padding:20px!important}
+  html body .step .step-index{width:46px!important;height:46px!important;font-size:16px!important;margin-bottom:14px!important}
+
+  /* списки на сторінках послуг — червоні галочки замість крапок */
+  html body .prose ul{list-style:none!important;padding:0!important}
+  html body .prose ul li{position:relative;padding-left:26px}
+  html body .prose ul li:before{content:"✓";position:absolute;left:0;top:0;color:#e0323d;font-weight:800}
+  html body .content{padding:36px 0 56px!important}
+
+  /* «Єдина вартість» */
+  html body .service-price-panel .price-panel-points{padding-left:0!important;border-left:0!important}
+  html body .service-price-panel .price-panel-points span{font-size:16px!important}
+
+  /* «Маєте запитання?» — темніший фон під текстом, кнопка по центру */
+  html body .cta{position:relative!important;overflow:hidden}
+  html body .cta-copy,html body .cta .wrap>div:first-child{position:relative;z-index:1}
+  html body .cta:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,10,.78),rgba(12,11,10,.55));border-radius:inherit;z-index:0;pointer-events:none}
+  html body .cta>*{position:relative;z-index:1}
+  html body .cta .btn,html body .cta-button{justify-content:center!important;gap:8px}
+
+  /* FAQ — компактніші питання */
+  html body .faq details{padding:18px 18px!important}
+  html body .faq details summary{padding:0 0 0 0!important;gap:12px}
+  html body .faq details[open] summary{margin-bottom:10px!important}
+}
+@media (max-width:700px){
+  html body .faq details summary{padding:0 48px 0 0!important;min-height:34px;display:flex;align-items:center;position:relative}
+  html body .faq details p{padding:0!important;margin:0!important}
+  html body .sidebox{padding:24px 20px!important}
+  html body .sidebox h3{margin-top:0!important}
+  html body .process-section,html body .section-dark{padding-bottom:40px!important}
+}
+@media (max-width:700px){
+  html body .service-price-panel .price-panel-points span{display:flex;gap:8px;align-items:flex-start}
+  html body .contacts-photo-panel{padding:26px 22px 26px!important;gap:20px!important;min-height:0!important}
+  html body .contact-cards .card .icon{width:52px!important;height:52px!important;margin-bottom:14px!important}
+  html body .contact-cards .card h3{margin:0 0 6px!important}
+  html body .service-points{display:grid;gap:8px}
+  html body .service-points li{margin:0!important}
+}
