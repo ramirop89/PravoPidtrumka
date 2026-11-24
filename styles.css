@@ -2322,3 +2322,19 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   .contacts-photo-panel:not(#_){background:linear-gradient(180deg,rgba(14,13,12,.45),rgba(14,13,12,.8)),url('assets/hq/contacts-cta-new-m.webp') 68% 60%/cover no-repeat!important}
   .about-photo:not(#_){background:url('assets/hq/booking-office-m.webp') 78% 45%/cover no-repeat!important}
 }
+
+/* v29: пошта і графік */
+.contact-link{color:inherit;text-decoration:none;border-bottom:1px solid rgba(190,27,39,.35);transition:color .2s,border-color .2s;word-break:break-word}
+.contact-link:hover{color:#be1b27;border-color:#be1b27}
+.footer-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right}
+.footer-mail{color:#f3ece2;font-size:18px;font-weight:700;text-decoration:none;border-bottom:1px solid rgba(216,185,120,.35)}
+.footer-mail:hover{color:#d8b978}
+.footer-hours{color:#c9c0b4;font-size:16px}
+@media (max-width:700px){.footer-side{align-items:flex-start;text-align:left}.footer-mail{font-size:16px}}
+/* v29: форма заявки */
+.hp-field{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0;pointer-events:none}
+.form-error{display:none;margin:0 0 14px;padding:14px 16px;border-radius:12px;background:rgba(190,27,39,.08);border:1px solid rgba(190,27,39,.3);color:#9e1a24;font-size:15px;line-height:1.5}
+.form-error.show{display:block}
+.btn.is-loading{opacity:.7;pointer-events:none}
+.btn.is-loading .arr{display:inline-block;animation:pp-spin 1s linear infinite}
+@keyframes pp-spin{to{transform:rotate(360deg)}}

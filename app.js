@@ -1,3 +1,7 @@
+/* Адреса Cloudflare Worker, який пересилає заявки в Telegram.
+   Вставте сюди адресу після створення Worker (інструкція в TELEGRAM-ЗАЯВКИ.txt). */
+window.LEADS_ENDPOINT = 'https://pravo-leads.pravodopomoga5.workers.dev/';
+
 (function () {
   // mobile menu
   var toggle = document.querySelector('.mobile-toggle'), links = document.querySelector('.links');
@@ -29,7 +33,7 @@
     els.forEach(function (el) { io.observe(el); });
   } else els.forEach(done);
 
-  // booking form (demo): phone mask + validation + animated success
+  // booking form: phone mask + validation + sending to Telegram (via Cloudflare Worker)
   document.querySelectorAll('form[data-demo-form]').forEach(function (form) {
     var phone = form.querySelector('input[type="tel"]');
     if (phone) {
@@ -56,10 +60,29 @@
         if (bad) { ok = false; el.closest('.field').classList.add('err'); }
       });
       if (!ok) return;
-      // TODO: тут підключіть відправку заявки (Telegram-бот / CRM / Formspree)
       var success = form.querySelector('.success');
-      if (success) { success.classList.add('show'); success.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
-      form.reset();
+      var errBox = form.querySelector('.form-error');
+      var btn = form.querySelector('button[type="submit"]');
+      if (errBox) { errBox.textContent = ''; errBox.classList.remove('show'); }
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = String(v).trim(); });
+      data.page = location.href;
+      var showOk = function () {
+        if (success) { success.classList.add('show'); success.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+        form.reset();
+      };
+      var showErr = function () {
+        if (errBox) {
+          errBox.textContent = 'Не вдалося надіслати заявку. Спробуйте ще раз або напишіть нам на pravodopomoga5@gmail.com.';
+          errBox.classList.add('show');
+        }
+      };
+      if (!window.LEADS_ENDPOINT) { console.warn('LEADS_ENDPOINT не налаштовано — заявка не надіслана'); showErr(); return; }
+      if (btn) { btn.disabled = true; btn.classList.add('is-loading'); }
+      fetch(window.LEADS_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || !j.ok) throw new Error(j.error || r.status); }); })
+        .then(showOk, showErr)
+        .then(function () { if (btn) { btn.disabled = false; btn.classList.remove('is-loading'); } });
     });
   });
 })();

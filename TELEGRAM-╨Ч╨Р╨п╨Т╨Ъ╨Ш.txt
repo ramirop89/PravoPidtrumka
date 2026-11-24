@@ -1,0 +1,42 @@
+ЯК ПІДКЛЮЧИТИ ЗАЯВКИ З САЙТУ В TELEGRAM
+=========================================
+Схема: форма на сайті → Cloudflare Worker → ваш Telegram.
+Токен бота зберігається тільки в Cloudflare, на сайті його не видно.
+
+КРОК 1. Створіть бота (2 хв)
+1. У Telegram відкрийте @BotFather → /newbot.
+2. Назва: ПравоПідтримка Заявки; ім'я бота: будь-яке, що закінчується на bot.
+3. BotFather надішле ТОКЕН (виглядає так: 123456789:AA...). Збережіть його, нікому не показуйте.
+4. Відкрийте свого нового бота і натисніть «Start» (інакше він не зможе вам писати).
+
+КРОК 2. Дізнайтесь свій CHAT_ID (1 хв)
+1. У Telegram відкрийте @userinfobot і натисніть «Start».
+2. Він надішле ваш Id (число, напр. 512345678). Це і є CHAT_ID.
+   Якщо хочете, щоб заявки йшли в групу: додайте бота в групу, а потім
+   додайте туди @userinfobot / @RawDataBot — він покаже id групи (починається з -100).
+
+КРОК 3. Створіть Worker у Cloudflare (5 хв)
+1. dash.cloudflare.com → Compute (Workers) → Workers & Pages → Create → Start with Hello World → Deploy.
+   Назвіть, напр.: pravo-leads.
+2. Натисніть «Edit code», видаліть усе і вставте вміст файлу telegram-worker.js. Натисніть «Deploy».
+3. Settings → Variables and Secrets → Add:
+   - BOT_TOKEN       = токен з кроку 1      (тип: Secret)
+   - CHAT_ID         = число з кроку 2      (тип: Text)
+   - ALLOWED_ORIGINS = https://ramirop89.github.io,https://ukrdopomoga-ua.com   (тип: Text)
+   Збережіть (Deploy).
+4. Скопіюйте адресу Worker, вона вгорі: https://pravo-leads.ВАШ-НІК.workers.dev
+
+КРОК 4. Вставте адресу в сайт (1 хв)
+1. Відкрийте app.js, перший рядок з кодом:
+      window.LEADS_ENDPOINT = '';
+   Вставте адресу між лапками:
+      window.LEADS_ENDPOINT = 'https://pravo-leads.ВАШ-НІК.workers.dev';
+2. Завантажте app.js на GitHub (Add file → Upload files → Commit).
+
+КРОК 5. Перевірте
+Відкрийте сайт → «Записатися» → заповніть форму → «Надіслати заявку».
+У Telegram прийде повідомлення: ім'я, телефон (натискається для дзвінка), тема, запит, час.
+
+Якщо не приходить: перевірте, що натиснули «Start» у боті, що CHAT_ID правильний,
+і що адреса сайту є в ALLOWED_ORIGINS (без / в кінці).
+Безкоштовний план Cloudflare: до 100 000 заявок на день.
